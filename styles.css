@@ -139,6 +139,7 @@ a{
 */
 
 .tags a{
+    text-decoration: none;
     position: relative;   
     grid-column: 1;
     display: block;
@@ -148,7 +149,10 @@ a{
     bottom: 0;
     left: 0;
     width: 0;
+    color: black;
 }
+
+
 
 
 @keyframes yonatan {
