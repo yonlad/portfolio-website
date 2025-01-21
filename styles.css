@@ -144,10 +144,9 @@ a{
     grid-column: 1;
     display: block;
     line-height: 1.5rem;
-    padding-left: 1.5rem;
     text-align: left;
     bottom: 0;
-    left: 0;
+    left: 1.5rem;
     width: 0;
     color: black;
 }
