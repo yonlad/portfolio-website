@@ -178,7 +178,7 @@
         // Toggle moving on click
         document.addEventListener('click', (e) => {
             // Ignore clicks on the load more button
-            if (e.target.id === 'load-more') return;
+            if (e.target.id === 'load-more' || e.target.id === 'projects-title') return;
             
             if (isMoving) {
                 clearInterval(intervalId); // Clear the interval
