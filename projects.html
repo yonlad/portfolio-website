@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="projects-styles.css">
+    <title>projects</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <style>
+        .project {
+            position: absolute; /* Allow absolute positioning */
+            width: 285px; /* Set a fixed width for the project boxes */
+            /* Add any other styles you want for the project boxes */
+        }
+        .projects-container {
+            position: relative;
+            text-align: center;
+            height: 80vh; /* Ensure the container fills the viewport */
+            overflow: hidden; /* Prevent overflow */
+            font-size: 14px;
+        }
+
+        .project a {
+            text-decoration: none;
+            color: inherit;
+            opacity: 1;
+        }
+
+        body{
+            cursor: crosshair;
+        }
+
+        .project a:hover{
+            cursor: pointer;
+            opacity: 0.7;
+        }
+
+        #load-more {
+            display: block;
+            margin: 20px auto; /* Center the button */
+            padding: 5px 0; /* Reduced padding for smaller size */
+            font-size: 16px; /* Smaller font size */
+            font-weight: normal; /* Normal font weight */
+            text-align: center; /* Center the text */
+            background: none; /* No background */
+            border: none; /* Remove border */
+            word-spacing: 5px;
+            letter-spacing: 5px;
+            cursor: pointer; /* Change cursor to pointer */
+        }
+
+        #load-more:hover {
+            text-decoration: underline; /* Underline text on hover */
+        }
+      
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <a href="about.html">about</a>
+        <a href="index.html">home</a>
+    </nav>
+    <div id="space"></div>
+    <h1 id="projects-title">selected projects</h1>
+    <button id="load-more">load more</button>
+    <div class="projects-container">
+        <!--
+        <div class="project">
+            <h2><a href="autopilot.html">autopilot</a></h2>
+           
+        </div>
+        <div class="project">
+            <h2><a href="memories-on-the-wall.html">memories on the wall</a></h2>
+            
+        </div>
+        <div class="project">
+            <h2><a href="when-we-are-two.html">when we are two</a></h2>
+           
+        </div>
+        <div class="project">
+            <h2><a href="sounds-of-life.html">sounds of life</a></h2>
+        </div>
+        -->
+    </div>
+
+    <script>
+        const projectsData = [
+            ['autopilot', 'autopilot.html'],
+            ['memories on the wall', 'memories-on-the-wall.html'],
+            ['when we are two', 'when-we-are-two.html'],
+            ['sounds of life', 'sounds-of-life.html'],
+            ['translations', 'translations.html'],
+            ['scenes from american culture', 'scenes-from-american-culture.html'],
+            ['what we don\'t hear', 'what-we-dont-hear.html'],
+            ['2: a monument', '2-a-monument.html'],
+            //['studies', 'studies.html'],
+            //['an eye that looks / a line that remembers', 'an-eye-that-looks.html'],
+            //['a study in a public bathroom', 'a-study-in-a-public-bathroom.html'],
+            //['for now', 'for-now.html'],
+            //['waiting for Godot', 'waiting-for-godot.html'],
+            //[untitled, untitled.html],
+
+        ];
+
+        let currentGroupIndex = 0;
+        const projectsPerGroup = 3;
+
+        function randomizeProjects() {
+            projectsData.sort(() => Math.random() - 0.5);
+        }
+
+        function createProjectFromData([title, link]) {
+            const project = document.createElement('div');
+            project.classList.add('project');
+            project.innerHTML = `<h2><a href="../projects/${link}">${title}</a></h2>`;
+            // Ensure text doesn't overflow
+            project.style.overflow = 'hidden';
+            project.style.maxWidth = '310px'; // Adjust as needed
+            return project;
+        }
+
+        function displayCurrentGroup() {
+            const container = document.querySelector('.projects-container');
+            container.innerHTML = ''; // Clear current projects
+
+            const startIndex = currentGroupIndex * projectsPerGroup;
+            const endIndex = Math.min(startIndex + projectsPerGroup, projectsData.length);
+            const currentProjects = projectsData.slice(startIndex, endIndex);
+
+            const projects = currentProjects.map(createProjectFromData);
+            projects.forEach(project => {
+                container.appendChild(project);
+            });
+
+            // Update load more button text based on position in cycle
+            const loadMoreButton = document.getElementById('load-more');
+            
+
+            positionProjects();
+        }
+
+        function positionProjects() {
+            const projects = document.querySelectorAll('.project');
+            const container = document.querySelector('.projects-container');
+
+            // Get the dimensions of the container
+            const containerWidth = container.clientWidth;
+            const containerHeight = container.clientHeight;
+
+            projects.forEach(project => {
+                // Get the dimensions of the project
+                const projectWidth = project.offsetWidth;
+                const projectHeight = project.offsetHeight;
+
+                // Calculate random positions ensuring they stay within bounds
+                const randomX = Math.random() * (containerWidth - projectWidth);
+                const randomY = Math.random() * (containerHeight - projectHeight);
+
+                // Set the position of the project
+                project.style.left = `${randomX}px`;
+                project.style.top = `${randomY}px`;
+            });
+        }
+
+        let intervalId; // Declare a variable to store the interval ID
+        let isMoving = false; // Flag to track if projects are moving
+
+        // Initial display
+        randomizeProjects();
+        displayCurrentGroup();
+        intervalId = setInterval(positionProjects, 2000); // Start the interval
+        isMoving = true; // Set the flag to true
+
+        // Reposition projects on window resize
+        window.addEventListener('resize', positionProjects);
+
+        // Toggle moving on click
+        document.addEventListener('click', (e) => {
+            // Ignore clicks on the load more button
+            if (e.target.id === 'load-more') return;
+            
+            if (isMoving) {
+                clearInterval(intervalId); // Clear the interval
+            } else {
+                intervalId = setInterval(positionProjects, 2000); // Start the interval
+            }
+            isMoving = !isMoving; // Toggle the flag
+        });
+
+        // Load more button functionality
+        document.getElementById('load-more').addEventListener('click', () => {
+            currentGroupIndex++;
+            // If we've shown all projects, reset to beginning
+            if (currentGroupIndex * projectsPerGroup >= projectsData.length) {
+                currentGroupIndex = 0;
+                randomizeProjects();
+            }
+            displayCurrentGroup();
+        });
+    </script>
+</body>
+</html>
