@@ -113,7 +113,7 @@
         function createProjectFromData([title, link]) {
             const project = document.createElement('div');
             project.classList.add('project');
-            project.innerHTML = `<h2><a href="../projects/${link}">${title}</a></h2>`;
+            project.innerHTML = `<h2><a href="projects/${link}">${title}</a></h2>`;
             // Ensure text doesn't overflow
             project.style.overflow = 'hidden';
             project.style.maxWidth = '310px'; // Adjust as needed
