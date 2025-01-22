@@ -96,7 +96,7 @@ a{
     list-style: none;
     margin-bottom: 20%;
     font-style: italic;
-    margin-top: 0;
+    margin-top: -50px;  /* original: 0 --- maybe need to change tags posistion */
     animation: yonatan infinite linear 6s;
     transform-origin: 55%;
     transform-style: preserve-3d;
