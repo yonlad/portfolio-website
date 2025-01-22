@@ -163,6 +163,28 @@ a{
     }
 }
 
+
+@media only screen and (max-width: 400px) {
+    .yonatan{
+        transform-origin: 63%;
+        margin-bottom: 29%;
+        font-size: 1.2rem;
+        /* margin-top: -50px; */
+    }
+    .tags{
+        margin-top: 20px;
+    }
+    .tags a{
+        position: relative;
+        top: 165px;
+        left: 0;
+        display: block;
+        line-height: 1.5rem;
+        padding-left: 1.5rem;
+        text-align: left;
+    }
+}
+
 @media only screen and (max-width: 550px) {
     .yonatan{
         transform-origin: 63%;
@@ -180,6 +202,7 @@ a{
         text-align: left;
     }
 }
+
 
 @media only screen and (max-height: 731px ) and (min-width: 550px) {
     .yonatan{
