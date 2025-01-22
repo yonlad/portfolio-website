@@ -164,7 +164,7 @@ a{
 }
 
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 400px) {
     .yonatan{
         transform-origin: 63%;
         margin-bottom: 29%;
