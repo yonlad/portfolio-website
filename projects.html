@@ -28,6 +28,7 @@
             height: 80vh; /* Ensure the container fills the viewport */
             overflow: hidden; /* Prevent overflow */
             font-size: 14px;
+            text-align: center;
         }
 
         .project a {
@@ -46,6 +47,7 @@
         }
 
         #load-more {
+            /*font-family: inherit;*/
             display: block;
             margin: 20px auto; /* Center the button */
             padding: 5px 0; /* Reduced padding for smaller size */
@@ -62,6 +64,22 @@
         #load-more:hover {
             text-decoration: underline; /* Underline text on hover */
         }
+
+        .overlay{
+    background-color: black;
+   
+}
+
+#overlay-list-item {
+    display: block; /* Change to block for vertical stacking */
+    grid-column: 2;
+    margin-bottom: 1rem; /* Space between list items */
+    padding: 1rem; /* Add padding for better spacing */
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
       
     </style>
 </head>
@@ -69,7 +87,9 @@
     <nav id="navbar">
         <a href="about.html">about</a>
         <a href="index.html">home</a>
+        <button id="all-projects">all</button>
     </nav>
+   
     <div id="space"></div>
     <h1 id="projects-title">selected projects</h1>
     <button style="text-decoration: none; color: black;" id="load-more">load more</button>
@@ -91,8 +111,8 @@
             <h2><a href="sounds-of-life.html">sounds of life</a></h2>
         </div>
         -->
-    </div>
-
+    
+</div>
     <script>
         const projectsData = [
             ['autopilot', 'autopilot.html'],
@@ -112,20 +132,26 @@
 
         ];
 
+        const allProjects = document.getElementById('all-projects');
+        const loadMoreButton = document.getElementById('load-more');
+       
+
         let currentGroupIndex = 0;
         const projectsPerGroup = 3;
+        
 
         function randomizeProjects() {
             projectsData.sort(() => Math.random() - 0.5);
         }
 
-        function createProjectFromData([title, link]) {
+        function createProjectFromData([title, link], color='black') {
             const project = document.createElement('div');
             project.classList.add('project');
             project.innerHTML = `<h2><a href="projects/${link}">${title}</a></h2>`;
             // Ensure text doesn't overflow
             project.style.overflow = 'hidden';
             project.style.maxWidth = '310px'; // Adjust as needed
+            project.style.color = color;
             return project;
         }
 
@@ -147,6 +173,17 @@
             
 
             positionProjects();
+        }
+
+        function displayAllProjects() {
+            const container = document.querySelector('.projects-container');
+            container.innerHTML = '';
+            projectsData.forEach(project => {
+                const listItem = document.createElement('div');
+                listItem.id = 'overlay-list-item';
+                listItem.appendChild(createProjectFromData(project, 'linen'));
+                container.appendChild(listItem);
+            });
         }
 
         function positionProjects() {
@@ -174,6 +211,7 @@
 
         let intervalId; // Declare a variable to store the interval ID
         let isMoving = false; // Flag to track if projects are moving
+        let overlay = false; // flag to track if overlay is active
 
         // Initial display
         randomizeProjects();
@@ -187,14 +225,20 @@
         // Toggle moving on click
         document.addEventListener('click', (e) => {
             // Ignore clicks on the load more button
-            if (e.target.id === 'load-more' || e.target.id === 'projects-title') return;
+            if (e.target.id === 'load-more' || e.target.id === 'projects-title' || e.target.id === 'all-projects'){
+                console.log("clicked", e.target.id);
+                return;
+            } 
             
             if (isMoving) {
                 clearInterval(intervalId); // Clear the interval
+                console.log("stopped", intervalId);
             } else {
                 intervalId = setInterval(positionProjects, 2000); // Start the interval
+                console.log("started", intervalId);
             }
             isMoving = !isMoving; // Toggle the flag
+            console.log("isMoving", isMoving);
         });
 
         // Load more button functionality
@@ -207,6 +251,39 @@
             }
             displayCurrentGroup();
         });
+
+        allProjects.addEventListener('click', () => {
+            overlay = !overlay;
+            document.body.classList.toggle('overlay');
+            document.body.style.transition = 'background-color 1.5s ease-in-out';
+            if (overlay){
+                clearInterval(intervalId);
+                isMoving = false;
+                console.log("stopped", intervalId);
+                displayAllProjects();
+                loadMoreButton.style.display = 'none';
+            }
+            else{
+                displayCurrentGroup();
+                intervalId = setInterval(positionProjects, 2000);
+                isMoving = true;
+                console.log("started", intervalId);
+                loadMoreButton.style.display = 'block';
+            } 
+        });
+
+        document.addEventListener('click', (e) => {
+            console.log(overlay);
+            if (e.target.id !== 'all-projects' && overlay){
+                overlay = !overlay;
+                document.body.classList.toggle('overlay');
+                document.body.style.transition = 'background-color 1.5s ease-in-out';
+                displayCurrentGroup();
+                loadMoreButton.style.display = 'block';          
+            }
+        });
+
+       
     </script>
 </body>
 </html>

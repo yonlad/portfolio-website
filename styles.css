@@ -68,6 +68,24 @@ a{
     opacity: 0.5;
 }
 
+
+
+#navbar #all-projects{
+    font-family: inherit;
+    font-size: inherit;
+    position: absolute;
+    grid-column: 1/3;
+    top: 30%;
+    left: 75%;
+    color: linen;
+    margin-left: 20px;
+    text-align: center;
+    margin: auto;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
 #name{
     margin-top: 25%;
     display: grid;
