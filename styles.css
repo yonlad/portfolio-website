@@ -108,7 +108,7 @@ a{
     width: 0;
 }
 
-@media only screen and (min-width: 380px) {
+@media only screen and (min-width: 700px) {
     #navbar #all-projects{
         left: 49%;
     }
