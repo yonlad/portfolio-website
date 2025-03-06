@@ -44,6 +44,9 @@ body{
 #landing{
     height: 100vh;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 #navbar{
@@ -210,12 +213,15 @@ a{
 }
 
 
+/* Media queries for .tags a positioning - no longer needed with flexbox approach */
+/*
+
 @media only screen and (max-width: 400px) {
     .yonatan{
         transform-origin: 63%;
         margin-bottom: 29%;
         font-size: 1.2rem;
-        /* margin-top: -50px; */
+        
     }
     .tags{
         margin-top: 20px;
@@ -236,7 +242,7 @@ a{
         transform-origin: 63%;
         margin-bottom: 29%;
         font-size: 1.2rem;
-        /* margin-top: -50px; */
+       
     }
     .tags a{
         position: relative;
@@ -255,7 +261,7 @@ a{
         transform-origin: 63%;
         margin-bottom: 29%;
         font-size: 1.2rem;
-       /* margin-top: -50px; */
+       
     }
     .tags a{
         position: relative;
@@ -269,9 +275,7 @@ a{
 }
 
 @media only screen and (max-height: 731px ) and (min-width: 715px) {
-   /* .yonatan{
-        margin-top: -50px;
-    } */
+   
    
     .tags a{
         top: 60px;
@@ -279,19 +283,14 @@ a{
 }
 
 @media only screen and (max-height: 731px ) and (min-width: 868px) {
-     /* .yonatan{
-        margin-top: -50px;
-    } */
-   
+    
     .tags a{
         top: 30px;
     }
 }
 
 @media only screen and (max-height: 731px ) and (min-width: 987px) {
-    /* .yonatan{
-        margin-top: -50px;
-    } */
+    
    
     .tags a{
         top: 0px;
@@ -299,9 +298,7 @@ a{
 }
 
 @media only screen and (max-height: 731px ) and (min-width: 1087px) {
-    /* .yonatan{
-        margin-top: -50px;
-    } */
+    
    
     .tags a{
         top: -30px;
@@ -309,9 +306,7 @@ a{
 }
 
 @media only screen and (max-height: 731px ) and (min-width: 1170px) {
-    /* .yonatan{
-        margin-top: -50px;
-    } */
+    
    
     .tags a{
         top: -60px;
@@ -319,9 +314,7 @@ a{
 }
 
 @media only screen and (max-height: 731px ) and (min-width: 1280px) {
-    /* .yonatan{
-        margin-top: -50px;
-    } */
+    
    
     .tags a{
         top: -90px;
@@ -358,6 +351,7 @@ a{
         top: 0px;
     }
 }
+*/
 
 /* Center the title */
 .title-container {
@@ -514,5 +508,24 @@ a{
     .footer{
         max-width: 80%;
     }
+}
+
+/* Add this new container for tags */
+.tags-container {
+    margin-top: auto; /* Push to bottom of flex container */
+    padding-bottom: 20px; /* Add some padding at the bottom */
+}
+
+.tags {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 1.5rem;
+}
+
+.tags a {
+    text-decoration: none;
+    line-height: 1.5rem;
+    color: black;
 }
 
