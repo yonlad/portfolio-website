@@ -47,6 +47,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding-bottom: 10px; /* Ensure some bottom padding */
 }
 
 #navbar{
@@ -121,6 +122,9 @@ a{
     margin-top: 25%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    /* Add some flexibility in the middle section */
+    flex: 1;
+    min-height: 0; /* Allow it to shrink if needed */
 }
 
 
@@ -212,6 +216,21 @@ a{
     }
 }
 
+@media only screen and (max-width: 550px) {
+    .yonatan{
+        transform-origin: 63%;
+        margin-bottom: 29%;
+        font-size: 1.2rem;
+       
+    }
+    #name {
+        margin-top: 15%; /* Reduce top margin on mobile */
+    }
+    
+    .yonatan, .eshban, .laderman {
+        margin-bottom: 10%; /* Reduce bottom margins */
+    }
+}
 
 /* Media queries for .tags a positioning - no longer needed with flexbox approach */
 /*
@@ -513,7 +532,9 @@ a{
 /* Add this new container for tags */
 .tags-container {
     margin-top: auto; /* Push to bottom of flex container */
-    padding-bottom: 20px; /* Add some padding at the bottom */
+    padding-bottom: 10px; /* Reduce bottom padding on mobile */
+    position: relative; /* Ensure it's in the flow but can be positioned */
+    z-index: 5; /* Make sure it's above other content */
 }
 
 .tags {
@@ -527,5 +548,21 @@ a{
     text-decoration: none;
     line-height: 1.5rem;
     color: black;
+}
+
+/* Additional mobile-specific adjustments */
+@media only screen and (max-height: 600px) {
+    .info-title {
+        margin-bottom: -10%; /* Reduce spacing */
+    }
+    
+    #name {
+        margin-top: 10%; /* Further reduce spacing */
+    }
+    
+    .yonatan, .eshban, .laderman {
+        margin-bottom: 5%; /* Minimal margins */
+        font-size: 1.2rem; /* Slightly smaller font */
+    }
 }
 
