@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Add some specific styles for the birthday card */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: sans-serif;
+            overflow: auto; /* override from styles.css */
+            background-color: #f0f0f0; /* A light grey background */
+        }
+        #card-container {
+            cursor: pointer;
+            text-align: center;
+            max-width: 80vw;
+            max-height: 80vh;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 15px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .slide {
+            display: none; /* Hidden by default */
+        }
+        .slide.active {
+            display: block; /* Show the active slide */
+            animation: fadeIn 0.5s;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .slide img {
+            max-width: 100%;
+            max-height: 70vh;
+            border-radius: 10px;
+        }
+        .slide video {
+            max-width: 100%;
+            max-height: 70vh;
+            border-radius: 10px;
+        }
+        .slide p {
+            font-size: 1.5rem;
+            padding: 20px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="card-container">
+        <!-- 
+            Instructions for adding content:
+            - To add a text slide, create a div with class="slide" and put a <p> tag inside it.
+            - To add an image slide, create a div with class="slide" and put an <img> tag inside it.
+            - Make sure to add your image files to the 'images' folder and update the src="".
+            - The first slide is shown by default.
+        -->
+        <div class="slide active">
+            <p>לאדם האהוב והיקר</p>
+        </div>
+        <div class="slide">
+            <p>השנה אני מנסה משהו חדש, כי מרגיש לי שמילים כבר לא מספיקות כדי לבטא כמה אני אוהב אותך</p>
+        </div>
+        <div class="slide">
+            <p>אז במקום, אני רוצה לקחת אותך לטיול-- אבל איפה נתחיל
+            </p>
+        </div>
+        <div class="slide">
+            <!-- Replace 'images/your-image-1.jpg' with the path to your image -->
+            <img src="images/adam/1.jpg" alt="A placeholder image">
+        </div>
+        <div class="slide">
+            <p>רגע, זה קצת מאוחר מידי
+            </p>
+        </div>
+        <div class="slide">
+            <!-- Replace 'images/your-image-1.jpg' with the path to your image -->
+            <img src="images/adam/bus.JPEG" alt="A placeholder image">
+        </div>
+        <div class="slide">
+            <p>זה כבר יותר טוב</p>
+        </div>
+        <div class="slide">
+            <p>חוץ מזה שאתה שותף לנפש ולמחשבה, אתה אחד האנשים שהיו לי הכי הרבה חוויות איתו בעולם הזה</p>
+        </div>
+        <div class="slide">
+            <p>בין אם זה מקרוב</p>
+        </div>
+        <div class="slide">
+            <!-- Replace 'images/your-image-1.jpg' with the path to your image -->
+            <img src="images/adam/bowling.JPEG" alt="A placeholder image">
+        </div>
+        <div class="slide">
+            <p>(אולי זה קרוב מידי)</p>
+        </div>
+        <div class="slide">
+            <p>ובין אם זה דרך הטלפון</p>
+        </div>
+        <div class="slide">
+             <!-- Replace 'images/your-image-2.jpg' with the path to your image -->
+            <img src="images/adam/phone1.PNG" alt="A placeholder image">
+        </div>
+        <div class="slide">
+            <!-- Replace 'images/your-image-2.jpg' with the path to your image -->
+           <img src="images/adam/phone2.PNG" alt="A placeholder image">
+       </div>
+       <div class="slide">
+        <!-- Replace 'images/your-image-2.jpg' with the path to your image -->
+       <img src="images/adam/phone3.PNG" alt="A placeholder image">
+   </div>
+   <div class="slide">
+    <p>בהודו</p>
+</div>
+<div class="slide">
+    <!-- Replace 'images/your-image-2.jpg' with the path to your image -->
+   <img src="images/adam/india1.JPG" alt="A placeholder image">
+</div>
+
+<div class="slide">
+    <p>בהכי גבוה</p>
+</div>
+<div class="slide">
+    <!-- Replace 'images/your-image-2.jpg' with the path to your image -->
+   <img src="images/adam/high.JPG" alt="A placeholder image">
+</div>
+<div class="slide">
+    <!-- Replace 'images/your-image-2.jpg' with the path to your image -->
+   <img src="images/adam/india2.JPG" alt="A placeholder image">
+</div>
+<div class="slide">
+    <!-- Replace 'images/your-image-2.jpg' with the path to your image -->
+   <img src="images/adam/amritsar.JPG" alt="A placeholder image">
+</div>
+<div class="slide">
+    <p>או בנמוך</p>
+</div>
+<div class="slide">
+    <!-- Replace 'images/your-image-2.jpg' with the path to your image -->
+   <video src="images/adam/shower.MP4" alt="A placeholder image" autoplay loop controls playsinline></video>
+</div>
+<div class="slide">
+    <p>ובצחוקים</p>
+</div>
+<div class="slide">
+    <!-- Replace 'images/your-image-2.jpg' with the path to your image -->
+   <video src="images/adam/vid.MP4" alt="A placeholder image" autoplay loop controls playsinline></video>
+</div>
+
+<div class="slide">
+    <p>בגן גורו</p>
+</div>
+<div class="slide">
+    <!-- Replace 'images/your-image-2.jpg' with the path to your image -->
+   <img src="images/adam/kangaroo.JPEG" alt="A placeholder image">
+</div>
+<div class="slide">
+    <p>וכל מקום אחר</p>
+</div>
+<div class="slide">
+    <!-- Replace 'images/your-image-2.jpg' with the path to your image -->
+   <img src="images/adam/paris.JPEG" alt="A placeholder image">
+</div>
+<div class="slide">
+    <p>אז, לעוד המון חוויות יחד, גנרל שרון</p>
+</div>
+<div class="slide">
+    <!-- Replace 'images/your-image-2.jpg' with the path to your image -->
+   <img src="images/adam/general.JPEG" alt="A placeholder image">
+</div>
+<div class="slide">
+    <p>ואל תשכח, תמיד</p>
+</div>
+<div class="slide">
+    <!-- Replace 'images/your-image-2.jpg' with the path to your image -->
+   <img src="images/adam/machal.JPEG" alt="A placeholder image">
+</div>
+
+        <div class="slide">
+            <p>מזל טוב אהוב, שתעלה ותצליח, אין עוד כמוך בעולם הזה</p>
+        </div>
+        <div class="slide">
+            <p>♥ אוהב המון ותמיד, לדי ♥</p>
+        </div>
+        <div class="slide">
+            <!-- Replace 'images/your-image-2.jpg' with the path to your image -->
+           <img src="images/adam/kiss.JPEG" alt="A placeholder image">
+        </div>
+    </div>
+
+    <script>
+        const container = document.getElementById('card-container');
+        const slides = document.querySelectorAll('.slide');
+        let currentSlide = 0;
+
+        container.addEventListener('click', (event) => {
+            // If a click is on a video, let the browser's controls handle it,
+            // instead of advancing the slide.
+            if (event.target.tagName === 'VIDEO') {
+                event.stopPropagation();
+                return;
+            }
+
+            // Find video in the current slide and stop it
+            const currentSlideEl = slides[currentSlide];
+            const video = currentSlideEl.querySelector('video');
+            if (video) {
+                video.pause();
+                video.currentTime = 0;
+            }
+
+            // Move to the next slide
+            currentSlideEl.classList.remove('active');
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].classList.add('active');
+         });
+    </script>
+
+</body>
+</html>
