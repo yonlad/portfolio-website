@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Add some specific styles for the birthday card */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: sans-serif;
+            overflow: auto; /* override from styles.css */
+            background-color: lightpink; /* A light grey background */
+        }
+        #card-container {
+            cursor: pointer;
+            text-align: center;
+            max-width: 80vw;
+            max-height: 80vh;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 15px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .slide {
+            display: none; /* Hidden by default */
+        }
+        .slide.active {
+            display: block; /* Show the active slide */
+            animation: fadeIn 0.5s;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .slide img {
+            max-width: 100%;
+            max-height: 70vh;
+            border-radius: 10px;
+        }
+        .slide video {
+            max-width: 100%;
+            max-height: 70vh;
+            border-radius: 10px;
+        }
+        .slide p {
+            font-size: 1.5rem;
+            padding: 20px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="card-container">
+        <!-- 
+            Instructions for adding content:
+            - To add a text slide, create a div with class="slide" and put a <p> tag inside it.
+            - To add an image slide, create a div with class="slide" and put an <img> tag inside it.
+            - Make sure to add your image files to the 'images' folder and update the src="".
+            - The first slide is shown by default.
+        -->
+        <div class="slide active">
+            <p>לאנה האהובה שלי</p>
+        </div>
+        <div class="slide">
+            <p>אחרי שהראיתי לך שהכנתי כזה לאדם וכל כך אהבת, אמרתי שאני חייב להכין ברכה כזאת גם לך <3</p>
+        </div>
+        <div class="slide">
+            <p>אני רוצה לקחת אותך לימים שבהם התחלנו לבנות את מה שיש היום
+            </p>
+        </div>
+        <div class="slide">
+            <!-- Replace 'images/your-image-1.jpg' with the path to your image -->
+            <img src="images/anna/1.JPG" alt="A placeholder image">
+        </div>
+        <div class="slide">
+            <p>למרות שבכתלס כבר בכיתה א׳ הצעתי לך חברות (והסכמת) אבל את לא מודה בזה...</p>
+        </div>
+        <div class="slide">
+            <!-- Replace 'images/your-image-1.jpg' with the path to your image -->
+            <img src="images/anna/2.JPG" alt="A placeholder image">
+        </div>
+
+        <div class="slide">
+            <p>ואחרי המון הליכות ביחד בדרך הביתה, ושיחות, וצחוקים, וקצת דרמות של סוף היסודי</p>
+        </div>
+        <div class="slide">
+            <p>המשכנו יחד לתיכון</p>
+        </div>
+       
+        <div class="slide">
+            <!-- Replace 'images/your-image-1.jpg' with the path to your image -->
+            <img src="images/anna/3.JPG" alt="A placeholder image">
+        </div>
+        <div class="slide">
+            <!-- Replace 'images/your-image-1.jpg' with the path to your image -->
+            <img src="images/anna/4.jpg" alt="A placeholder image">
+        </div>
+        <div class="slide">
+            <!-- Replace 'images/your-image-1.jpg' with the path to your image -->
+            <img src="images/anna/5.jpg" alt="A placeholder image">
+        </div>
+        
+        <div class="slide">
+            <p>ולצופים</p>
+        </div>
+        <div class="slide">
+            <!-- Replace 'images/your-image-1.jpg' with the path to your image -->
+            <img src="images/anna/6.JPG" alt="A placeholder image">
+        </div>
+        <div class="slide">
+            <p>וקצת פוליטיקה, כי בתכלס ממך למדתי הכל (ואני ממשיך ללמוד הכל)</p>
+        </div>
+        <div class="slide">
+            <!-- Replace 'images/your-image-1.jpg' with the path to your image -->
+            <img src="images/anna/7.JPG" alt="A placeholder image">
+        </div>
+        <div class="slide">
+            <p>וכמה עצוב היה לשחרר אותך לצבא, וואי, אבל עדיין המשכנו להתחבק כמו תמיד</p>
+        </div>
+        <div class="slide">
+            <!-- Replace 'images/your-image-1.jpg' with the path to your image -->
+            <img src="images/anna/8.JPG" alt="A placeholder image">
+        </div>
+        <div class="slide">
+            <p>אוי, ואיך שכחתי את הטיול האגדי בברלין</p>
+        </div>
+        <div class="slide">
+            <!-- Replace 'images/your-image-1.jpg' with the path to your image -->
+            <img src="images/anna/9.JPG" alt="A placeholder image">
+        </div>
+        <div class="slide">
+            <p>תודה שאת תמיד שם בשבילי</p>
+        </div>
+        <div class="slide">
+            <!-- Replace 'images/your-image-1.jpg' with the path to your image -->
+            <img src="images/anna/10.JPG" alt="A placeholder image">
+        </div>
+        <div class="slide">
+            <p>בין אם זה כשאני אומר לך כל כמה שנים שאני מאוהב בך ואת צוחקת עליי</p>
+        </div>
+
+        <div class="slide">
+            <p>ובין אם זה כשאני בוכה לך על כל מיני בנות ששוברות לי את הלב</p>
+        </div>
+        <div class="slide">
+            <!-- Replace 'images/your-image-1.jpg' with the path to your image -->
+            <img src="images/anna/11.JPG" alt="A placeholder image">
+        </div>
+
+        <div class="slide">
+            <p>אין הרבה אנשים עם לב כמו שלך בעולם הזה</p>
+        </div>
+        <div class="slide">
+            <!-- Replace 'images/your-image-1.jpg' with the path to your image -->
+            <img src="images/anna/12.JPG" alt="A placeholder image">
+        </div>
+        <div class="slide">
+            <p>ואני כך כך שמח שזכיתי לזה שאת בחיים שלי, החצי השני</p>
+        </div>
+        <div class="slide">
+            <!-- Replace 'images/your-image-1.jpg' with the path to your image -->
+            <img src="images/anna/13.JPG" alt="A placeholder image">
+        </div>
+        <div class="slide">
+            <p>אני יודע שאת תגשימי את החלומות שאת רוצה הלגשים, בגלל שיש לך את הכישרון, הפתיחות, הסקרנות, והאהב</p>
+        </div>
+        <div class="slide">
+            <p>ואני בטוח שאני ואת זה לנצח</p>
+        </div>
+        <div class="slide">
+            <p>לא סתם את היחידה שהטלפון שלי שומר את התמונות שאת שולחת לי בווצאפ ישר לגלריה, הוא יודע...</p>
+        </div>
+        <div class="slide">
+            <!-- Replace 'images/your-image-1.jpg' with the path to your image -->
+            <img src="images/anna/15.JPG" alt="A placeholder image">
+        </div>
+        <div class="slide">
+            <p>את תמיד איתי בלב</p>
+        </div>
+        <div class="slide">
+            <!-- Replace 'images/your-image-1.jpg' with the path to your image -->
+            <img src="images/anna/14.JPG" alt="A placeholder image">
+        </div>
+
+        <div class="slide">
+            <p>אז מזל טוב אהובה שלי, שתמשיכי להיות האדם המדהים שאת</p>
+        </div>
+        <div class="slide">
+            <p>♥ אוהב המון ותמיד, יונתן ♥</p>
+        </div>
+        <div class="slide">
+            <!-- Replace 'images/your-image-1.jpg' with the path to your image -->
+            <img src="images/anna/16.JPG" alt="A placeholder image">
+        </div>
+        <div class="slide">
+            <!-- Replace 'images/your-image-2.jpg' with the path to your image -->
+           <img src="images/adam/kiss.JPEG" alt="A placeholder image">
+        </div>
+
+    </div>
+
+    <script>
+        const container = document.getElementById('card-container');
+        const slides = document.querySelectorAll('.slide');
+        let currentSlide = 0;
+
+        container.addEventListener('click', (event) => {
+            // If a click is on a video, let the browser's controls handle it,
+            // instead of advancing the slide.
+            if (event.target.tagName === 'VIDEO') {
+                event.stopPropagation();
+                return;
+            }
+
+            // Find video in the current slide and stop it
+            const currentSlideEl = slides[currentSlide];
+            const video = currentSlideEl.querySelector('video');
+            if (video) {
+                video.pause();
+                video.currentTime = 0;
+            }
+
+            // Move to the next slide
+            currentSlideEl.classList.remove('active');
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].classList.add('active');
+         });
+    </script>
+
+</body>
+</html>
