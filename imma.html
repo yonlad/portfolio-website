@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Add some specific styles for the birthday card */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: sans-serif;
+            overflow: auto; /* override from styles.css */
+            background-color: lightpink; /* A light grey background */
+        }
+        #card-container {
+            cursor: pointer;
+            text-align: center;
+            max-width: 80vw;
+            max-height: 80vh;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 15px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .slide {
+            display: none; /* Hidden by default */
+        }
+        .slide.active {
+            display: block; /* Show the active slide */
+            animation: fadeIn 0.5s;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .slide img {
+            max-width: 100%;
+            max-height: 70vh;
+            border-radius: 10px;
+        }
+        .slide video {
+            max-width: 100%;
+            max-height: 70vh;
+            border-radius: 10px;
+        }
+        .slide p {
+            font-size: 1.5rem;
+            padding: 20px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="card-container">
+        <!-- 
+            Instructions for adding content:
+            - To add a text slide, create a div with class="slide" and put a <p> tag inside it.
+            - To add an image slide, create a div with class="slide" and put an <img> tag inside it.
+            - Make sure to add your image files to the 'images' folder and update the src="".
+            - The first slide is shown by default.
+        -->
+        <div class="slide active">
+            <p>  לאמא האהובה שלנו </p>
+        </div>
+        <div class="slide">
+            <img src="images/imma/street.jpeg" alt="A placeholder image">
+        </div>
+        <div class="slide">
+            <p>  רצינו לאמר לך כמה מילים לכבוד יום הולדתך <3</p>
+        </div>
+        <div class="slide">
+            <p>התברכנו על אמא כל כך מיוחדת, תומכת, יפה, מדהימה, ומצחיקה
+            </p>
+        </div>
+        <div class="slide">
+            <img src="images/imma/cactus2.jpeg" alt="A placeholder image">
+        </div>
+        <div class="slide">
+            <p>למרות שלפעמים זה נראה שאין לנו סבלנות אלייך</p>
+        </div>
+        <div class="slide">
+            <img src="images/imma/kids.jpeg" alt="A placeholder image">
+        </div>
+        <div class="slide">
+            <p>אנחנו לא יכולים בלעדייך</p>
+        </div>
+        <div class="slide">
+            <img src="images/imma/kiss.jpeg" alt="A placeholder image">
+        </div>
+        <div class="slide">
+            <p>אנחנו רוצים לאחל לך את כל הטוב שהעולם הזה מציע</p>
+        </div>
+       
+        <div class="slide">
+            <img src="images/imma/elevator.jpeg" alt="A placeholder image">
+        </div>
+        <div class="slide">
+            <img src="images/imma/beach.jpeg" alt="A placeholder image">
+        </div> 
+        <div class="slide">
+            <p>שתמשיכי לחוות, להנות, לצחוק, ולכבוש את העולם הזה עם הקסם שלך</p>
+        </div>
+        <div class="slide">
+            <img src="images/imma/ski.jpeg" alt="A placeholder image">
+        </div>
+        <div class="slide">
+            <img src="images/imma/vacay.jpeg" alt="A placeholder image">
+        </div>
+        <div class="slide">
+            <p>שתהני מכל רגע, תגשימי את כל הדברים שאיי פעם רצית לעשות</p>
+        </div>
+        <div class="slide">
+            <img src="images/imma/totem.jpeg" alt="A placeholder image">
+        </div>
+        <div class="slide">
+            <p>והכי הכי חשוב שתישארי נאמנה לעצמך ולבן האדם המדהים שאת</p>
+        </div>
+        <div class="slide">
+            <img src="images/imma/zev.jpeg" alt="A placeholder image">
+        </div>
+        <div class="slide">
+            <p>איזה כיף שאת אמא שלנו ושיצאנו מהבטן שלך :)</p>
+        </div>
+        <div class="slide">
+            <img src="images/imma/oldpic.jpeg" alt="A placeholder image">
+        </div>
+        <div class="slide">
+            <p>ושאת יצאת מהבטן</p>
+        </div>
+        <div class="slide">
+            <img src="images/imma/savta.jpeg" alt="A placeholder image">
+        </div>
+        <div class="slide">
+            <p>תודה שאת תמיד תמיד שם כשאנחנו צריכים אותך</p>
+        </div>
+        <div class="slide">
+            <img src="images/imma/masks.jpeg" alt="A placeholder image">
+        </div>
+        <div class="slide">
+            <img src="images/imma/mirror.jpeg" alt="A placeholder image">
+        </div>
+        <div class="slide">
+            <p>כל הפעמים שיונתן התקשר בוכה אלייך</p>
+        </div>
+        <div class="slide">
+            <img src="images/imma/yselfie.jpeg" alt="A placeholder image">
+        </div>
+        <div class="slide">
+            <p>או שדנדן מתקשר להתלונן על כמה שיונתן בוכה לו</p>
+        </div>
+        <div class="slide">
+            <img src="images/imma/cafeteria.jpeg" alt="A placeholder image">
+        </div>
+        <div class="slide">
+            <p>תמיד יש לך סבלנות, נתינה ותמיכה לא מהעולם הזה</p>
+        </div>
+        <div class="slide">
+            <img src="images/imma/famtable.jpeg" alt="A placeholder image">
+        </div>
+        <div class="slide">
+            <p>אין הרבה אנשים עם לב ושמחת חיים כמו שלך, אוזן קשובה, ואנרגיה שממלאת כל חדר שאת נכנסת אליו </p>
+        </div>
+        <div class="slide">
+            <img src="images/imma/museum.jpeg" alt="A placeholder image">
+        </div>
+        <div class="slide">
+            <p>באמת שזכינו באמא והחברה הכי טובה שיכולנו לבקש </p>
+        </div>
+        <div class="slide">
+            <img src="images/imma/garden.jpeg" alt="A placeholder image">
+        </div>
+        <div class="slide">
+            <p>אוהבים אותך תמיד</p>
+        </div>
+        <div class="slide">
+            <img src="images/imma/norway.jpeg" alt="A placeholder image">
+        </div>
+        <div class="slide">
+            <p>ותמיד פה בשבילך</p>
+        </div>
+        <div class="slide">
+            <img src="images/imma/isr.jpeg" alt="A placeholder image">
+        </div>
+        <div class="slide">
+            <p>הבנים המפגרים שלך</p>
+        </div>
+        <div class="slide">
+            <img src="images/imma/cacti.jpeg" alt="A placeholder image">
+        </div>
+
+        <div class="slide">
+            <p>דנדן ויונתן </p>
+        </div>
+        <div class="slide">
+            <img src="images/imma/flowers.jpeg" alt="A placeholder image">
+        </div>
+        <div class="slide">
+            <p>אז יאלללהההה מזזזלללללל טובבבבבב</p>
+        </div>
+        <div class="slide">
+            <img src="images/imma/dgradfam.jpeg" alt="A placeholder image">
+        </div>
+        <div class="slide">
+            <p>ולעוד מלא שנים של חום, אהבה, בריאות, אושר, ויושר </p>
+        </div>
+        <div class="slide">
+            <img src="images/imma/dgrad.jpeg" alt="A placeholder image">
+        </div>
+        <div class="slide">
+            <img src="images/imma/ladder.jpeg" alt="A placeholder image">
+        </div>
+        <div class="slide">
+            <img src="images/imma/kiss.jpeg" alt="A placeholder image">
+        </div>
+
+    </div>
+
+    <script>
+        const container = document.getElementById('card-container');
+        const slides = document.querySelectorAll('.slide');
+        let currentSlide = 0;
+
+        container.addEventListener('click', (event) => {
+            // If a click is on a video, let the browser's controls handle it,
+            // instead of advancing the slide.
+            if (event.target.tagName === 'VIDEO') {
+                event.stopPropagation();
+                return;
+            }
+
+            // Find video in the current slide and stop it
+            const currentSlideEl = slides[currentSlide];
+            const video = currentSlideEl.querySelector('video');
+            if (video) {
+                video.pause();
+                video.currentTime = 0;
+            }
+
+            // Move to the next slide
+            currentSlideEl.classList.remove('active');
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].classList.add('active');
+         });
+    </script>
+
+</body>
+</html>
