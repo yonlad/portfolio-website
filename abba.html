@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Add some specific styles for the birthday card */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: sans-serif;
+            overflow: auto; /* override from styles.css */
+            background-color: lightblue; /* A light grey background */
+        }
+        #card-container {
+            cursor: pointer;
+            text-align: center;
+            max-width: 80vw;
+            max-height: 80vh;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 15px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .slide {
+            display: none; /* Hidden by default */
+        }
+        .slide.active {
+            display: block; /* Show the active slide */
+            animation: fadeIn 0.5s;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .slide img {
+            max-width: 100%;
+            max-height: 70vh;
+            border-radius: 10px;
+        }
+        .slide video {
+            max-width: 100%;
+            max-height: 70vh;
+            border-radius: 10px;
+        }
+        .slide p {
+            font-size: 1.5rem;
+            padding: 20px;
+            color: #333;
+        }
+
+        /* Confetti styles */
+        .confetti {
+            position: fixed;
+            width: 10px;
+            height: 10px;
+            top: -10px;
+            z-index: 1000;
+            pointer-events: none;
+        }
+        
+        @keyframes confetti-fall {
+            0% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(100vh) rotate(720deg);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="card-container">
+        <!-- 
+            Instructions for adding content:
+            - To add a text slide, create a div with class="slide" and put a <p> tag inside it.
+            - To add an image slide, create a div with class="slide" and put an <img> tag inside it.
+            - Make sure to add your image files to the 'images' folder and update the src="".
+            - The first slide is shown by default.
+        -->
+        <div class="slide active">
+            <p> לאבא היקר</p>
+        </div>
+        <div class="slide">
+            <img src="images/abba/dinner.jpg" alt="A placeholder image">
+        </div>
+        <div class="slide">
+            <p>  רצינו לאחל לך יום הולדת שמח</p>
+        </div>
+        <div class="slide">
+            <img src="images/abba/view.JPG" alt="A placeholder image">
+        </div>
+        <div class="slide">
+            <p>שתמשיך לחוות, להינות, לגדול, ולרקוד
+            </p>
+        </div>
+        <div class="slide">
+            <img src="images/abba/party.jpg" alt="A placeholder image">
+        </div>
+        <div class="slide">
+            <p>שתזכה לבריאות, אושר, אהבה, ושמחה כמו שאתה יודע לתת</p>
+        </div>
+        <div class="slide">
+            <img src="images/abba/fam-young.JPG" alt="A placeholder image">
+        </div>
+        <div class="slide">
+            <p>אנחנו ברי מזל לקרוא לך אבא</p>
+        </div>
+        <div class="slide">
+            <img src="images/abba/black-eye.jpg" alt="A placeholder image">
+        </div>
+        <div class="slide">
+            <p>תמיד רצית רק לטובתנו, גם אם לפעמים יש חילוקי דעות</p>
+        </div>
+       
+        <div class="slide">
+            <img src="images/abba/museum.jpg" alt="A placeholder image">
+        </div>
+        <div class="slide">
+            <p>אנחנו מעריכים את כל מה שעשית ושאתה עושה בשבילנו</p>
+        </div>
+        <div class="slide">
+            <img src="images/abba/mirror.jpg" alt="A placeholder image">
+        </div>
+        <div class="slide">
+            <p>בלעדייך לא היינו מי שאנחנו היום</p>
+        </div>
+        <div class="slide">
+            <img src="images/abba/grad.jpg" alt="A placeholder image">
+        </div>
+        <div class="slide">
+            <p>למרות שאתה חושב שאתה יודע הכל</p>
+        </div>
+        <div class="slide">
+            <img src="images/abba/parents.jpg" alt="A placeholder image">
+        </div>
+        <div class="slide">
+            <p>ואנחנו לא אוהבים להקשיב לך</p>
+        </div>
+        <div class="slide">
+            <img src="images/abba/uniform.jpg" alt="A placeholder image">
+        </div>
+        <div class="slide">
+            <p>אנחנו לא מפסיקים ללמוד ממך דברים</p>
+        </div>
+        <div class="slide">
+            <img src="images/abba/elevtor.jpg" alt="A placeholder image">
+        </div>
+        <div class="slide">
+            <p>חוץ מהעברית השבורה שלך</p>
+        </div>
+        <div class="slide">
+            <img src="images/abba/dandan.jpg" alt="A placeholder image">
+        </div>
+        <div class="slide">
+            <p>אין הרבה אנשים עם שמחת חיים כמו שלך</p>
+        </div>
+        <div class="slide">
+            <img src="images/abba/sunset.jpg" alt="A placeholder image">
+        </div>
+        <div class="slide">
+            <p>וזה מרגיש שאתה רק נהיה יותר ויותר צעיר עם השנים</p>
+        </div>
+        <div class="slide">
+            <img src="images/abba/baseball-field.jpg" alt="A placeholder image">
+        </div>
+        <div class="slide">
+            <p>אנחנו שמחים שהורשת לנו את השמחת חיים הזאת</p>
+        </div>
+        <div class="slide">
+            <img src="images/abba/walking.jpg" alt="A placeholder image">
+        </div>
+        <div class="slide">
+            <p>גם אם יונתן לפעמים קצת דכאוני</p>
+        </div>
+        <div class="slide">
+            <img src="images/abba/young.JPG" alt="A placeholder image">
+        </div>
+        <div class="slide">
+            <p>אז אנחנו מאחלים לך שתהיה שנה טובה</p>
+        </div>
+        <div class="slide">
+            <img src="images/abba/sofa.JPG" alt="A placeholder image">
+        </div>
+        <div class="slide">
+            <p>שתמשיך להגשים את כל החלומות שלך</p>
+        </div>
+        <div class="slide">
+            <img src="images/abba/breakfast.jpg" alt="A placeholder image">
+        </div>
+        <div class="slide">
+            <p>ושתלמד גם קצת לנוח</p>
+        </div>
+        <div class="slide">
+            <img src="images/abba/cuties.jpg" alt="A placeholder image">
+        </div>
+        <div class="slide">
+            <p>אוהבים מלא</p>
+        </div>
+        <div class="slide">
+            <img src="images/abba/selfie.jpg" alt="A placeholder image">
+        </div>
+        <div class="slide">
+            <p>דנדן ויונתן </p>
+        </div>
+    </div>
+
+    <script>
+        const container = document.getElementById('card-container');
+        const slides = document.querySelectorAll('.slide');
+        let currentSlide = 0;
+
+        container.addEventListener('click', (event) => {
+            // If a click is on a video, let the browser's controls handle it,
+            // instead of advancing the slide.
+            if (event.target.tagName === 'VIDEO') {
+                event.stopPropagation();
+                return;
+            }
+
+            // Find video in the current slide and stop it
+            const currentSlideEl = slides[currentSlide];
+            const video = currentSlideEl.querySelector('video');
+            if (video) {
+                video.pause();
+                video.currentTime = 0;
+            }
+
+            // Move to the next slide
+            currentSlideEl.classList.remove('active');
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].classList.add('active');
+         });
+
+        // Confetti effect on page load
+        function createConfetti() {
+            const colors = ['#ff6b6b', '#feca57', '#48dbfb', '#ff9ff3', '#54a0ff', '#5f27cd', '#00d2d3', '#ff9f43', '#10ac84'];
+            const shapes = ['square', 'circle'];
+            const confettiCount = 150;
+
+            for (let i = 0; i < confettiCount; i++) {
+                const confetti = document.createElement('div');
+                confetti.className = 'confetti';
+                
+                // Random properties
+                const color = colors[Math.floor(Math.random() * colors.length)];
+                const shape = shapes[Math.floor(Math.random() * shapes.length)];
+                const size = Math.random() * 10 + 5;
+                const left = Math.random() * 100;
+                const delay = Math.random() * 3;
+                const duration = Math.random() * 2 + 2;
+                
+                confetti.style.left = left + 'vw';
+                confetti.style.width = size + 'px';
+                confetti.style.height = size + 'px';
+                confetti.style.backgroundColor = color;
+                confetti.style.borderRadius = shape === 'circle' ? '50%' : '0';
+                confetti.style.animation = `confetti-fall ${duration}s ease-out ${delay}s forwards`;
+                
+                document.body.appendChild(confetti);
+                
+                // Remove confetti after animation
+                setTimeout(() => {
+                    confetti.remove();
+                }, (duration + delay) * 1000 + 100);
+            }
+        }
+
+        // Trigger confetti when page loads
+        window.addEventListener('load', createConfetti);
+    </script>
+
+</body>
+</html>
