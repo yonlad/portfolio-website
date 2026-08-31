@@ -248,9 +248,7 @@ nav.nav a[aria-current="page"] {
 
 .tombstone {
   max-width: var(--text-width);
-  margin-bottom: 2rem;
-  padding-top: 1.5rem;
-  border-top: 1px solid var(--border);
+  margin-bottom: 2.25rem;
 }
 
 .tombstone-title {
