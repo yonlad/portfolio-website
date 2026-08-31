@@ -114,3 +114,9 @@ No separate "News" page until there is recurring news. No blog.
 - [x] Wave 4: done within build (GoatCounter yonlad.goatcounter.com — ACCOUNT REGISTRATION PENDING before launch)
 - [x] Wave 5 (2026-08-30): two-tier home (selected/earlier); 4 works restored from git history with videos recovered; IGWH video embed; viewport-fit images; local cv.pdf
 - [ ] Launch: artist approval → merge to main → verify live
+
+## VIDEO HOSTING DECISION (2026-08-31, artist)
+
+**Google Drive embeds, permanently** (free wins; Vimeo declined — 1GB storage cap on free tier). Accepted trade-off, documented: Drive files can throttle/refuse playback under heavy viewing ("quota exceeded") and player start is slow because sources are raw exports (up to 1.1GB/min). If it ever bites, the fix is a URL swap in .video-wrapper iframes — structure is host-agnostic.
+
+**Video inventory (probed with ffprobe, 2026-08-31):** all nine are 1920×1080 (16:9) except If Gaza Were Here (1412×940, 3:2 — wrapper carries inline aspect-ratio override). Player box defaults to aspect-ratio 16/9, black ground, full-bleed on phones (<620px). Raw-export sizes: what-we-dont-hear 1.1G, scenes 864M, memories 593M, when-we-are-two 368M, translations 193M, autopilot 112M, sounds-of-life 35M. Re-exporting ~50MB/min H.264 would speed player start (optional, artist's call).

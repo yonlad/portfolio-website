@@ -217,9 +217,17 @@ nav.nav a[aria-current="page"] {
 .video-wrapper {
   position: relative;
   width: 100%;
-  padding-top: 56.25%;
-  background: var(--bg-alt);
+  aspect-ratio: 16 / 9;
+  background: #000;
   margin-bottom: 0.5rem;
+}
+
+/* phones: video player goes edge-to-edge for maximum size */
+@media (max-width: 619px) {
+  .video-wrapper {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+  }
 }
 
 .video-wrapper iframe {
