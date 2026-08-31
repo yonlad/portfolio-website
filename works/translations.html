@@ -49,8 +49,12 @@
     </div>
 
     <div class="work-hero">
-      <img width="2000" height="1139" src="../assets/works/translations/translations-01.jpg" alt="Translations, 2024 — installation view, wooden model of a destroyed city with projected image">
-
+      <div class="video-wrapper">
+        <video autoplay muted loop playsinline preload="auto" poster="../assets/works/translations/translations-poster.jpg">
+          <source src="../assets/works/translations/translations-doc.mp4" type="video/mp4">
+        </video>
+        <button class="sound-toggle" aria-pressed="false">sound</button>
+      </div>
     </div>
 
 
@@ -60,12 +64,6 @@
       <p>Exhibited at Stanford, as part of Stanford's Honors in the Arts Final Exhibition.</p>
     </div>
 
-    <div class="video-wrapper">
-      <video controls playsinline preload="metadata" poster="../assets/works/translations/translations-poster.jpg">
-        <source src="../assets/works/translations/translations-doc.mp4" type="video/mp4">
-      </video>
-    </div>
-    <p class="media-label">video documentation</p>
 
     <nav class="work-nav" aria-label="Other works">
       <div class="prev">
@@ -85,5 +83,19 @@
 
   <!-- GoatCounter analytics. Account yonlad.goatcounter.com must be registered before launch. -->
   <script data-goatcounter="https://yonlad.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
-</body>
+    <script>
+      (function () {
+        var v = document.querySelector('.work-hero video');
+        var b = document.querySelector('.sound-toggle');
+        if (!v) return;
+        if (b) b.addEventListener('click', function () {
+          v.muted = !v.muted;
+          if (!v.muted && v.paused) v.play();
+          b.textContent = v.muted ? 'sound' : 'mute';
+          b.setAttribute('aria-pressed', String(!v.muted));
+        });
+        v.addEventListener('click', function () { v.paused ? v.play() : v.pause(); });
+      })();
+    </script>
+  </body>
 </html>

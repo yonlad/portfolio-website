@@ -468,3 +468,24 @@ nav.nav a[aria-current="page"] {
 .grid--earlier .work-year {
   font-size: 0.78rem;
 }
+
+
+/* hero video: chrome-free loop with a single sound affordance */
+.work-hero .video-wrapper { margin-bottom: 0; cursor: pointer; }
+.sound-toggle {
+  position: absolute;
+  right: 0.9rem;
+  bottom: 0.9rem;
+  z-index: 2;
+  border: 0;
+  padding: 0.35rem 0.8rem;
+  font: inherit;
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  text-transform: lowercase;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.55);
+  cursor: pointer;
+}
+.sound-toggle:hover { background: rgba(0, 0, 0, 0.8); }
+.sound-toggle:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }

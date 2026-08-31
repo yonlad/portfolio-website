@@ -50,7 +50,12 @@
     </div>
 
     <div class="work-hero">
-      <img width="2000" height="1338" src="../assets/works/if-gaza-were-here/if-gaza-were-here-01.jpg" alt="If Gaza Were Here, 2026 — book cover, artist book of paired satellite images and printed model weights">
+      <div class="video-wrapper" style="aspect-ratio: 1412 / 940;">
+        <video autoplay muted loop playsinline preload="auto" poster="../assets/works/if-gaza-were-here/if-gaza-were-here-poster.jpg">
+          <source src="../assets/works/if-gaza-were-here/if-gaza-were-here-doc.mp4" type="video/mp4">
+        </video>
+        <button class="sound-toggle" aria-pressed="false">sound</button>
+      </div>
     </div>
 
 
@@ -63,15 +68,10 @@
 
     <p class="external-link"><a href="https://www.nli.org.il/en/books/NNL_ALEPH997014808555505171/NLI" target="_blank" rel="noopener">Catalog record, National Library of Israel →</a></p>
 
-    <div class="video-wrapper" style="aspect-ratio: 1412 / 940;">
-      <video controls playsinline preload="metadata" poster="../assets/works/if-gaza-were-here/if-gaza-were-here-poster.jpg">
-        <source src="../assets/works/if-gaza-were-here/if-gaza-were-here-doc.mp4" type="video/mp4">
-      </video>
-    </div>
-    <p class="media-label">video documentation</p>
 
 
     <div class="work-images">
+      <img width="2000" height="1338" src="../assets/works/if-gaza-were-here/if-gaza-were-here-01.jpg" alt="If Gaza Were Here, 2026 — book cover, artist book of paired satellite images and printed model weights">
       <img width="2000" height="1338" src="../assets/works/if-gaza-were-here/if-gaza-were-here-02.jpg" alt="If Gaza Were Here, 2026 — interior spread, printed satellite image pair" loading="lazy">
     </div>
 
@@ -93,5 +93,19 @@
 
   <!-- GoatCounter analytics. Account yonlad.goatcounter.com must be registered before launch. -->
   <script data-goatcounter="https://yonlad.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
-</body>
+    <script>
+      (function () {
+        var v = document.querySelector('.work-hero video');
+        var b = document.querySelector('.sound-toggle');
+        if (!v) return;
+        if (b) b.addEventListener('click', function () {
+          v.muted = !v.muted;
+          if (!v.muted && v.paused) v.play();
+          b.textContent = v.muted ? 'sound' : 'mute';
+          b.setAttribute('aria-pressed', String(!v.muted));
+        });
+        v.addEventListener('click', function () { v.paused ? v.play() : v.pause(); });
+      })();
+    </script>
+  </body>
 </html>

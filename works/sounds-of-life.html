@@ -49,7 +49,12 @@
     </div>
 
     <div class="work-hero">
-      <img width="2000" height="1205" src="../assets/works/sounds-of-life/sounds-of-life-01.jpg" alt="Sounds of Life, 2024 — interface still, interactive calendar of daily sound recordings">
+      <div class="video-wrapper">
+        <video autoplay muted loop playsinline preload="auto" poster="../assets/works/sounds-of-life/sounds-of-life-poster.jpg">
+          <source src="../assets/works/sounds-of-life/sounds-of-life-doc.mp4" type="video/mp4">
+        </video>
+        <button class="sound-toggle" aria-pressed="false">sound</button>
+      </div>
     </div>
 
 
@@ -61,12 +66,6 @@
 
     <p class="external-link"><a href="https://yonlad.github.io/sounds-of-life/" target="_blank" rel="noopener">Live site (desktop only) →</a></p>
 
-    <div class="video-wrapper">
-      <video controls playsinline preload="metadata" poster="../assets/works/sounds-of-life/sounds-of-life-poster.jpg">
-        <source src="../assets/works/sounds-of-life/sounds-of-life-doc.mp4" type="video/mp4">
-      </video>
-    </div>
-    <p class="media-label">video documentation</p>
 
 
     <nav class="work-nav" aria-label="Other works">
@@ -87,5 +86,19 @@
 
   <!-- GoatCounter analytics. Account yonlad.goatcounter.com must be registered before launch. -->
   <script data-goatcounter="https://yonlad.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
-</body>
+    <script>
+      (function () {
+        var v = document.querySelector('.work-hero video');
+        var b = document.querySelector('.sound-toggle');
+        if (!v) return;
+        if (b) b.addEventListener('click', function () {
+          v.muted = !v.muted;
+          if (!v.muted && v.paused) v.play();
+          b.textContent = v.muted ? 'sound' : 'mute';
+          b.setAttribute('aria-pressed', String(!v.muted));
+        });
+        v.addEventListener('click', function () { v.paused ? v.play() : v.pause(); });
+      })();
+    </script>
+  </body>
 </html>

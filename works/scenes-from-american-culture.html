@@ -50,7 +50,12 @@
     </div>
 
     <div class="work-hero">
-      <img width="2000" height="1333" src="../assets/works/scenes-from-american-culture/scenes-from-american-culture-01.jpg" alt="Scenes From American Culture, 2023 — performance still, Pop Gun Art Gallery">
+      <div class="video-wrapper">
+        <video autoplay muted loop playsinline preload="auto" poster="../assets/works/scenes-from-american-culture/scenes-from-american-culture-poster.jpg">
+          <source src="../assets/works/scenes-from-american-culture/scenes-from-american-culture-doc.mp4" type="video/mp4">
+        </video>
+        <button class="sound-toggle" aria-pressed="false">sound</button>
+      </div>
     </div>
 
 
@@ -60,14 +65,9 @@
       <p>Written and directed by the artist. Commissioned by and performed at Pop Gun Art Gallery, New York, August 2023.</p>
     </div>
 
-    <div class="video-wrapper">
-      <video controls playsinline preload="metadata" poster="../assets/works/scenes-from-american-culture/scenes-from-american-culture-poster.jpg">
-        <source src="../assets/works/scenes-from-american-culture/scenes-from-american-culture-doc.mp4" type="video/mp4">
-      </video>
-    </div>
-    <p class="media-label">video documentation</p>
 
     <div class="work-images">
+      <img width="2000" height="1333" src="../assets/works/scenes-from-american-culture/scenes-from-american-culture-01.jpg" alt="Scenes From American Culture, 2023 — performance still, Pop Gun Art Gallery">
       <img width="2000" height="1333" src="../assets/works/scenes-from-american-culture/scenes-from-american-culture-02.jpg" alt="Scenes From American Culture, 2023 — performance still" loading="lazy">
       <img width="2000" height="1333" src="../assets/works/scenes-from-american-culture/scenes-from-american-culture-03.jpg" alt="Scenes From American Culture, 2023 — performance still" loading="lazy">
       <img width="2000" height="1333" src="../assets/works/scenes-from-american-culture/scenes-from-american-culture-04.jpg" alt="Scenes From American Culture, 2023 — performance still" loading="lazy">
@@ -98,5 +98,19 @@
 
   <!-- GoatCounter analytics. Account yonlad.goatcounter.com must be registered before launch. -->
   <script data-goatcounter="https://yonlad.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
-</body>
+    <script>
+      (function () {
+        var v = document.querySelector('.work-hero video');
+        var b = document.querySelector('.sound-toggle');
+        if (!v) return;
+        if (b) b.addEventListener('click', function () {
+          v.muted = !v.muted;
+          if (!v.muted && v.paused) v.play();
+          b.textContent = v.muted ? 'sound' : 'mute';
+          b.setAttribute('aria-pressed', String(!v.muted));
+        });
+        v.addEventListener('click', function () { v.paused ? v.play() : v.pause(); });
+      })();
+    </script>
+  </body>
 </html>
