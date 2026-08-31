@@ -140,7 +140,7 @@ nav.nav a[aria-current="page"] {
   display: grid;
   grid-template-columns: 1fr;
   gap: 3rem 2rem;
-  padding-bottom: 4rem;
+  padding: 0 0 4rem;
   margin: 0;
   list-style: none;
 }
