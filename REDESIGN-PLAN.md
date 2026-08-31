@@ -87,3 +87,29 @@ No separate "News" page until there is recurring news. No blog.
 4. Video hosting: Vimeo account, or in-repo compressed loop?
 5. Contact email: keep gmail, or set up hello@yonatan-eshban-laderman.org?
 6. Is there newer CV content than the Google Doc?
+
+---
+
+## DECISIONS LOCKED (2026-08-30, artist)
+
+| Question | Decision |
+|---|---|
+| Curation | Tier 1 + Tier 2 approved. **Autopilot KEPT, featured last** (not cut). |
+| Confinement dimensions | **48 × 18 × 7 in.** (sourced from Wassaic/Kimmel packages; recorded in my-art 2026-08-26) |
+| Analytics | Free → **GoatCounter** (no cookie banner). Site code to register at signup. |
+| Mobilized video | Google Drive hosted; embed via `/preview` iframe (file id 1xjA_lAA3wYEFGBn0xrRUZP6bryr0g2Yx) |
+| If Gaza Were Here | Page links OUT to the NLI catalog record (NNL_ALEPH997014808555505171) — the state's own catalog hosts the claim. Book photos: igwh-front/back.JPG |
+| Contact email | Keep gmail (yankeecholima@gmail.com) |
+| CV | Google Doc is current (fetched 2026-08-30); becomes HTML page + PDF |
+| Process | Subagent-driven build, commits per logical unit on `redesign`, local preview, merge = launch |
+
+## BUILD LEDGER
+
+- [x] 2026-08-30 `redesign` branch created + pushed; architecture committed
+- [x] 2026-08-30 Facts gathered: Confinement dims, IGWH book photos located, CV fetched, NLI catalog record confirmed (logged in my-art as Record 5)
+- [ ] Wave 1a: asset derivatives (agent dispatched)
+- [ ] Wave 1b: content files (agent dispatched)
+- [ ] Wave 2: design + build (pending wave 1)
+- [ ] Wave 3: review loop on localhost (screenshots), iterate
+- [ ] Wave 4: analytics + SEO + og cards + redirects from old URLs
+- [ ] Launch: artist approval → merge to main → verify live
