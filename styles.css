@@ -12,7 +12,7 @@
   --border: #dcdcda;
   --focus: #141414;
   --font: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --content-width: 1100px;
+  --content-width: 1200px;
   --text-width: 42rem;
 }
 
@@ -202,6 +202,16 @@ nav.nav a[aria-current="page"] {
 
 .work-hero {
   margin-bottom: 2.5rem;
+}
+
+.work-hero img,
+.work-images img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 78vh;
+  margin: 0 auto;
 }
 
 .video-wrapper {
@@ -397,4 +407,10 @@ nav.nav a[aria-current="page"] {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 0;
+}
+
+
+/* large screens: let the grid breathe, keep captions modest */
+@media (min-width: 1600px) {
+  :root { --content-width: 1320px; }
 }
