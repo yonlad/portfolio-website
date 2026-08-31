@@ -1,6 +1,6 @@
 ---
 slug: when-we-are-two
-title: when we are two
+title: When We Are Two
 year: "2023 – ongoing"
 order: 4
 medium: "Live audiovisual performance; 2-channel video, 4-channel audio; Max/MSP patch, webcams, dinner table, two lights"

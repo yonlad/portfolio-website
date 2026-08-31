@@ -1,6 +1,6 @@
 ---
 slug: sounds-of-life
-title: sounds of life
+title: Sounds of Life
 year: 2024
 order: 5
 medium: "Interactive web archive / surveillance app; HTML, CSS, JavaScript, React.js / Swift"

@@ -107,9 +107,9 @@ No separate "News" page until there is recurring news. No blog.
 
 - [x] 2026-08-30 `redesign` branch created + pushed; architecture committed
 - [x] 2026-08-30 Facts gathered: Confinement dims, IGWH book photos located, CV fetched, NLI catalog record confirmed (logged in my-art as Record 5)
-- [ ] Wave 1a: asset derivatives (agent dispatched)
-- [ ] Wave 1b: content files (agent dispatched)
-- [ ] Wave 2: design + build (pending wave 1)
-- [ ] Wave 3: review loop on localhost (screenshots), iterate
-- [ ] Wave 4: analytics + SEO + og cards + redirects from old URLs
+- [x] Wave 1a: asset derivatives — 58 files, all <600KB
+- [x] Wave 1b: content files — 10 files, facts verified vs my-art record
+- [x] Wave 2: build — 11 pages + redirects + SEO + analytics wiring
+- [x] Wave 3: coordinator review — fixed title casing, removed 2 unsourced bio claims, injected img dims (CLS)
+- [x] Wave 4: done within build (GoatCounter yonlad.goatcounter.com — ACCOUNT REGISTRATION PENDING before launch)
 - [ ] Launch: artist approval → merge to main → verify live
