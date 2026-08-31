@@ -1,4 +1,5 @@
 ---
+video: https://drive.google.com/file/d/1vxQ_3OK39zSkZ7EqeVz1TUaYaN49Bl8h/preview
 slug: sounds-of-life
 title: Sounds of Life
 year: 2024

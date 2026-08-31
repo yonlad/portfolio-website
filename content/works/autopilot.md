@@ -1,4 +1,5 @@
 ---
+video: https://drive.google.com/file/d/1kiNisCNLjvJQkpPBgOpxOpXd8S2ERoOY/preview
 slug: autopilot
 title: Autopilot
 year: 2025
