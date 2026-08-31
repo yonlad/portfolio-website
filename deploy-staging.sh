@@ -6,6 +6,8 @@ SRC="$(cd "$(dirname "$0")" && pwd)"
 TMP="$(mktemp -d)"
 rsync -a --exclude .git --exclude CNAME --exclude .DS_Store --exclude deploy-staging.sh "$SRC/" "$TMP/"
 printf 'User-agent: *\nDisallow: /\n' > "$TMP/robots.txt"
+# staging must not pollute analytics: strip the GoatCounter script
+find "$TMP" -name "*.html" -exec sed -i '' '/goatcounter/d' {} +
 rm -f "$TMP/sitemap.xml"
 cd "$TMP"
 git init -q -b main

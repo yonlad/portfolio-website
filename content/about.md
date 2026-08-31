@@ -1,7 +1,7 @@
 ---
 title: About
 ---
-Yonatan Eshban-Laderman (b. Tel Aviv, Israel) lives and works in Brooklyn, NY. He holds a BS in Symbolic Systems, with Distinction, Honors in the Arts, and a Minor in Creative Writing, and an MA in German Studies (Theater & Performance Studies, Media Studies), both from Stanford University. His practice moves across sculpture, installation, new media, and performance, built from research into militarization, surveillance technology, and the material infrastructures that connect civilian and military life. His work has been shown at CCRMA and Stanford's Elam Theater, SOMArts Cultural Center (San Francisco), NYCResistor (Brooklyn), and Pop Gun Art Gallery (New York). His critical writing has appeared in Ha'aretz, the Brooklyn Rail, and IMPULSE Magazine.
+Yonatan Eshban-Laderman (b. Tel Aviv, Israel) lives and works in Brooklyn, NY. He holds a BS in Symbolic Systems, with Distinction, Honors in the Arts, and a Minor in Creative Writing, and an MA in German Studies (Theater & Performance Studies, Media Studies), both from Stanford University. His practice moves across sculpture, installation, new media, and performance, built from research into militarization, surveillance technology, and the material infrastructures that connect civilian and military life. His work has been shown at CCRMA and Stanford's Elam Theater, SOMArts Cultural Center (San Francisco), NYCResistor (Brooklyn), and Pop Gun Art Gallery (New York), where he wrote and directed a commissioned performance. His critical writing has appeared in Ha'aretz, the Brooklyn Rail, and IMPULSE Magazine.
 
 ---
 
