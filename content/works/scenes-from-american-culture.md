@@ -1,5 +1,5 @@
 ---
-video: https://drive.google.com/file/d/1v5N4eRVnuwyRAgko0Q5El6O9mWZOqTru/preview
+video: assets/works/scenes-from-american-culture/scenes-from-american-culture-doc.mp4
 slug: scenes-from-american-culture
 title: Scenes From American Culture
 year: 2023

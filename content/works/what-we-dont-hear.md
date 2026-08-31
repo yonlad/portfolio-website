@@ -1,5 +1,5 @@
 ---
-video: https://drive.google.com/file/d/1R8Vj9Ad1Su6MdDLn57KSwXBgLEjd2XpG/preview
+video: assets/works/what-we-dont-hear/what-we-dont-hear-doc.mp4
 slug: what-we-dont-hear
 title: What We Don't Hear
 year: 2023

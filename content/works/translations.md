@@ -1,5 +1,5 @@
 ---
-video: https://drive.google.com/file/d/1JS4CSLHdKQZFgd9VzXWODCnJ2v33djB7/preview
+video: assets/works/translations/translations-doc.mp4
 slug: translations
 title: Translations
 year: 2024

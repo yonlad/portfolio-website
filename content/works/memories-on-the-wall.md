@@ -1,5 +1,5 @@
 ---
-video: https://drive.google.com/file/d/1B4HsbWEMsPTLPY2WiVbpbAqmddYGmhon/preview
+video: assets/works/memories-on-the-wall/memories-on-the-wall-doc.mp4
 slug: memories-on-the-wall
 title: Memories on the Wall
 year: 2024
