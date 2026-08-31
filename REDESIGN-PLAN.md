@@ -1,0 +1,89 @@
+# Website Redesign — Content Architecture & Build Plan
+
+*Branch: `redesign`. Live site (`main`) untouched until approved merge.*
+*Source of truth for all work texts: `~/apps/my-art/` (my-art.md §4 + per-project conceptual-decisions.md). Never write website copy from scratch — extract and compress from the record.*
+
+---
+
+## Design register
+
+Modern, professional, accessible — but in the practice's own voice: **quiet, precise, cold, image-forward.** The austerity IS the artistic statement (reference register: Cameron Rowland's, Walid Raad's web presence). Restraint stays; obscurity goes.
+
+- Work images do the talking; interface disappears
+- Generous white space, one typeface family, no decoration, no animation flourishes
+- Every work reachable in ≤2 clicks; every page self-explanatory
+- Mobile-first responsive; fast loads
+
+## Sitemap
+
+```
+Home            — name + one-line identity + selected-works grid (image-led)
+└── Work pages  — one per work (template below)
+About           — short bio + condensed artist statement
+CV              — proper HTML page + downloadable PDF
+Contact         — email (mailto) + Instagram  [foldable into About]
+```
+
+No separate "News" page until there is recurring news. No blog.
+
+## Work page template (every work identical structure)
+
+1. **Hero image** (full-bleed or near)
+2. **Tombstone**: *Title*, year · medium · dimensions · (edition/unique where relevant)
+3. **Short text** — 100–180 words, what the piece DOES not what it's ABOUT, extracted from conceptual-decisions.md. No theory-dump, no explanation of puns/titles.
+4. **Further images / video** — carousel or stacked
+5. (Where true) **operational note** — e.g. IGWH's National Library deposit, one factual line
+
+## Curation — which works and in what order
+
+**Tier 1 — current body (the reason visitors come):**
+1. *Mobilized* (2026) — stills + video exist
+2. *Confinement* (2026) — 4 stills exist (verify dimensions recorded)
+3. *If Gaza Were Here* (2026) — book of weights; CONTENT GAP: book object photos still pending; can launch with page spreads/renders + training-pair images
+4. *When We Are Two* (2023–ongoing) — strongest earlier work, bridges bodies
+
+**Tier 2 — selected earlier (curated, not exhaustive):**
+5. *Sounds of Life* (2024)
+6. *Scenes From American Life* (2023)
+
+**Proposed cuts (not on new site; files kept in repo history):**
+- *Autopilot* — artist's own assessment: weakest, too didactic. A portfolio is curation; cut.
+- *Translations*, *What We Don't Hear*, *Memories on the Wall*, *2: A Monument* — early/student register; dilute the coherence the site must communicate. Cut (revisit later if wanted).
+
+**Not on the site:** works in development (Makita, kite/plane, protective symbols, patents inquiry). Portfolio = finished work only. The patents/operational works appear if/when their form closes.
+
+**Family pages** (abba/imma/anna/adam + assets): keep files live at their URLs (they are gifts with recipients), unlinked from all navigation, `noindex`.
+
+## Technical checklist ("everything a proper artist site has")
+
+| Item | Decision |
+|---|---|
+| Analytics | **Privacy-first, no cookie banner needed.** Recommend GoatCounter (free) or Plausible (~$9/mo, nicer). NOT GA4 (consent banner, weight). Decide before build. |
+| SEO | Per-page titles + meta descriptions; sitemap.xml regenerated; canonical URLs |
+| Social cards | og:image per page (work hero); site-wide default = Mobilized wide shot. Fixes the current blank-card share. |
+| Structured data | schema.org Person on About; VisualArtwork per work page (cheap, do it) |
+| Images | Web derivatives committed to repo: long side ~2000px, JPEG q80, target <500KB (sources are 3–9MB; full-res stays local/Drive per policy). Lazy-load below fold. Alt text on everything. |
+| Video | Mobilized video is 637MB — NOT in repo. Host: Vimeo (clean, professional for artists) or compressed short loop (<10MB) in-repo. Decide. |
+| Accessibility | Semantic HTML, contrast AA, keyboard-navigable, alt text |
+| CV | HTML page + PDF download (replaces Google Doc link) |
+| Contact | mailto + Instagram; no form (static site, forms = 3rd-party dependency) |
+| Domain/hosting | Unchanged: GitHub Pages + www.yonatan-eshban-laderman.org |
+| Favicon | Exists; keep/refresh |
+
+## Build sequence
+
+1. Approve this architecture (artist)
+2. Content pass: write all work texts from my-art record; assemble image derivatives
+3. Design + build on `redesign` (frontend-design discipline); local preview throughout
+4. Analytics + SEO + cards wiring
+5. Artist review on localhost (optionally bolt on staging repo URL for phone review)
+6. Merge to main = launch; verify domain, sitemap, cards
+
+## Open questions for the artist
+
+1. Confinement dimensions — recorded by now? (was pending 2026-07)
+2. Approve the cuts (esp. Autopilot)?
+3. Analytics: GoatCounter (free) vs Plausible (paid)?
+4. Video hosting: Vimeo account, or in-repo compressed loop?
+5. Contact email: keep gmail, or set up hello@yonatan-eshban-laderman.org?
+6. Is there newer CV content than the Google Doc?
