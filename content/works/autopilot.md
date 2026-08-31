@@ -3,6 +3,7 @@ slug: autopilot
 title: Autopilot
 year: 2025
 order: 7
+tier: earlier
 medium: "Experimental game / interactive installation; SuperCollider, Python, HTML, CSS, JavaScript, WebGazer.js"
 dimensions: "ca. 10 min"
 images: assets/works/autopilot/

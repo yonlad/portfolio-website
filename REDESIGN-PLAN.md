@@ -112,4 +112,5 @@ No separate "News" page until there is recurring news. No blog.
 - [x] Wave 2: build — 11 pages + redirects + SEO + analytics wiring
 - [x] Wave 3: coordinator review — fixed title casing, removed 2 unsourced bio claims, injected img dims (CLS)
 - [x] Wave 4: done within build (GoatCounter yonlad.goatcounter.com — ACCOUNT REGISTRATION PENDING before launch)
+- [x] Wave 5 (2026-08-30): two-tier home (selected/earlier); 4 works restored from git history with videos recovered; IGWH video embed; viewport-fit images; local cv.pdf
 - [ ] Launch: artist approval → merge to main → verify live

@@ -414,3 +414,43 @@ nav.nav a[aria-current="page"] {
 @media (min-width: 1600px) {
   :root { --content-width: 1320px; }
 }
+
+/* earlier works tier */
+
+.works-section + .works-section {
+  margin-top: 1rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid var(--border);
+}
+
+.section-label {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  letter-spacing: 0.03em;
+  text-transform: lowercase;
+  margin: 0 0 1.5rem;
+}
+
+.grid--earlier {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem 1.25rem;
+}
+
+@media (min-width: 620px) {
+  .grid--earlier {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.grid--earlier .grid-caption {
+  margin-top: 0.6rem;
+}
+
+.grid--earlier .work-title {
+  font-size: 0.9rem;
+}
+
+.grid--earlier .work-year {
+  font-size: 0.78rem;
+}
