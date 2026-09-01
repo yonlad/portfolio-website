@@ -490,3 +490,13 @@ nav.nav a[aria-current="page"] {
 }
 .sound-toggle:hover { text-decoration: underline; text-underline-offset: 3px; }
 .sound-toggle:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+
+
+/* writing page: essay links must read as links */
+.writing li a {
+  color: var(--text);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: var(--border);
+}
+.writing li a:hover { text-decoration-color: var(--text); }

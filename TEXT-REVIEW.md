@@ -113,3 +113,22 @@
 ---
 
 *CV page: rendered verbatim from your updated Google Doc — review it on the site itself (/cv.html); flag anything there separately.*
+
+---
+
+## 4. WRITING PAGE (added 2026-09-01 — review these entries too)
+
+Nav gains a fourth item: works · **writing** · about · cv
+
+> **Writing**
+> 2026 — "The Cantilevered Unconsciousness", IMPULSE Magazine [linked]
+> 2026 — "Staring At What Is", IMPULSE Magazine [linked]
+> 2026 — "V-Effekt", The Brooklyn Rail [linked]
+> 2025 — "An Ode To Waste", IMPULSE Magazine [linked]
+> 2025 — "Drifting Without Handlebars", IMPULSE Magazine [linked]
+> 2025 — "On Exhibition Design with Grace Caiazza", IMPULSE Magazine [linked]
+> 2025 — "Gregory Kalliche's 'Anvil': A Digital Gesamtkunstwerk", IMPULSE Magazine [linked]
+> 2024 — "If You Know What River and Which Sea, How Come You Don't Shout Louder?", Haaretz (Hebrew, op-ed) [no link]
+> 2024 — "On the Opportunity for Bi-National Memory", Zo Haderekh (Hebrew, op-ed) [no link]
+
+⚑ The two Hebrew op-eds have no links (none in your CV). If they exist online, send URLs and they become clickable.
