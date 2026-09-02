@@ -519,3 +519,19 @@ nav.nav a[aria-current="page"] {
 .extended-text summary::-webkit-details-marker { display: none; }
 .extended-text summary:hover { color: var(--text); }
 .extended-text p { margin: 1.2rem 0 0; }
+
+
+/* portrait (9:16) secondary videos: phone-shaped, centered, never full-bleed */
+.video-wrapper--portrait {
+  max-width: min(360px, 100%);
+  margin: 0 auto 0.5rem;
+}
+@media (max-width: 619px) {
+  .video-wrapper--portrait {
+    width: 100%;
+    max-width: min(320px, 85vw);
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.video-wrapper--portrait + .media-label { text-align: center; }
