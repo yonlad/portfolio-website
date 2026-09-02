@@ -541,3 +541,13 @@ main.wrap > h1 {
   }
 }
 .video-wrapper--portrait + .media-label { text-align: center; }
+
+
+/* work pages: text column centers under the image midpoint (no-op on phones,
+   where the column already spans the screen) */
+.tombstone,
+.work-body,
+.external-link {
+  margin-left: auto;
+  margin-right: auto;
+}
