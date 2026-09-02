@@ -9,12 +9,6 @@ medium: "Live audiovisual performance; 1-channel video, 2-channel audio; Max/MSP
 dimensions: "ca. 10 min"
 images: assets/works/what-we-dont-hear/
 ---
-A performer's body is controlled by its own organs. An advertisement opens the piece, framing the five essential organs and their interconnection, before a circus-like sequence introduces an "invention" — an unplugged microphone that lets the audience hear each organ speak: its functions, malfunctions, traumas. The soundtrack is precomposed and triggered by the performer through a ring hidden under his glove, so sound appears to originate from inside his body while actually dictating his movement, marionette-like. The piece climaxes when the performer listens to his own brain — recursively producing himself as both subject and object of his own perception.
-
-Staged at CCRMA's Stage, Stanford, as part of the Electronic Sound Poetry Festival.
-
-## Extended text
-
 what we don’t hear is a theatrical performance that attempts to voice what is suppressed, repressed, or hidden within our organs. Unlike traditional theater, the main actor in this piece is the soundtrack, which controls the performer and dictates his movements as if he were a marionette.
 
 The performance begins with an advertisement that sets the atmosphere by highlighting the importance and interconnectedness of the five essential organs in our body. This introduction invites the audience to re-examine what lies beneath our skin, both literally and metaphorically.
@@ -24,3 +18,5 @@ Through a circus-like show, the audience is introduced to a new invention: an un
 As the performance progresses, the performer's initial surprise at the sounds of his organs transitions into an expectation of discovering the next sound his body will produce. The lines between control and being controlled blur, raising the question of whether the performer controls the sounds of his organs or if the reverse is true.
 
 The climax of the piece occurs when the performer listens to his own brain, recursively listening to himself in the process of creating himself. This experience becomes overwhelming as he realizes he is simultaneously both the subject and the object of his own perception.
+
+Staged at CCRMA's Stage, Stanford, as part of the Electronic Sound Poetry Festival.

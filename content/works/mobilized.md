@@ -4,9 +4,7 @@ title: Mobilized
 year: 2026
 order: 1
 medium: "3D-printed PLA, aluminum spray paint, steel, stepper motor, and custom electronics"
-dimensions: "11½ × 30½ × 30½ in. (29 × 77.5 × 77.5 cm), dimensions variable (suspended, rotating)"
-edition: "Unique"
-kinetic: "Motorized; continuous rotation"
+dimensions: "11½ × 30½ × 30½ in."
 video: assets/works/mobilized/mobilized-doc.mp4
 images: assets/works/mobilized/
 ---

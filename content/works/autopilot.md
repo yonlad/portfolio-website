@@ -9,12 +9,6 @@ medium: "Experimental game / interactive installation; SuperCollider, Python, HT
 dimensions: "ca. 10 min"
 images: assets/works/autopilot/
 ---
-The player takes the role of a drone operator. Eye-tracking software, retrained from WebGazer.js, places a targeting crosshair on a "mission-video" — 4K footage of Israel, digitally degraded into low resolution and glitch — at the point the player's gaze lands; a mouse click fires. Two saw-wave synthesizers in SuperCollider tie pitch and amplitude to eye movement, producing a continuous motor-like drone under a missile-launch sound on each click. Strikes are never shown directly: each produces a sustained light flicker that outlasts its explosion sound and bleeds into the following footage.
-
-After roughly ten minutes the game ends onto an information page: high-resolution photographs from Gaza, drone-market data, and casualty figures from U.S. drone strikes in the Middle East.
-
-## Extended text
-
 Autopilot is a game critiquing how warfare drones disconnect the combatant from the scene of violence. Situating the player in the role of a drone operator who controls the drone’s target with her eyes and launches missiles with a mouse-click, Autopilot aims to render visible and proximate the low-resolution landscape that the drone makes ever more distant (physically and morally).
 
 Combat drones, heralded as the future of warfare, have become increasingly prevalent on modern battlefields. While celebrated for making military operations safer for the deploying forces, their ethical implications often go unexamined. Beyond highlighting the power disparity between nations and groups that can afford drone technology, drone warfare raises profound questions about surveillance, perspective, and the mediation of conflict. Thus, Autopilot originated from the assumption that the quality of a place's representation influences the actions deemed permissible in that space. Depicting a territory solely through low-resolution imaging technologies is a violent act that degrades its importance, equivalent to saying that what happens there does not matter. In times of war, this can lead to regarding a place as "collateral damage" and justifying its destruction.

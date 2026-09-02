@@ -9,12 +9,6 @@ external_link: https://yonlad.github.io/sounds-of-life/
 external_link_label: "Live site (desktop only)"
 images: assets/works/sounds-of-life/
 ---
-A self-surveillance app records eighteen ten-second clips a day — 18×10, after the Hebrew "chai," life — logging ordinary sound in Israel through September 2024. The recordings populate an online calendar: clicking a date plays that day's clips; clicking the corresponding day of the war opens a report of Israeli attacks and Palestinian casualties, which interrupts and obscures the audio already playing. The cursor is mostly invisible; navigation requires deliberate searching.
-
-A specific click sequence unlocks an "ENOUGH" button, opening a hidden calendar where visitors have 18×10 seconds to overwrite the archive with their own recordings before the countdown reverts them. Built in HTML, CSS, JavaScript, and React, with a companion app in Swift.
-
-## Extended text
-
 sounds of life is an interactive web-archive calendar that juxtaposes the disturbing contrast between the comfortable normalcy of Jewish life in Israel and the ongoing genocide of Palestinians in Gaza during September 2024.
 
 Required to return to Israel for familial obligations after a two-year absence, I turned my visit into an opportunity to document Israeli society's unsettling ability to maintain a façade of ordinary existence while actively perpetrating atrocities.

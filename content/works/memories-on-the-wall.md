@@ -8,12 +8,6 @@ tier: earlier
 medium: "Interactive installation; TouchDesigner, Max/MSP patch, monitor, speaker, wall"
 images: assets/works/memories-on-the-wall/
 ---
-A monitor functions as a mirror, showing viewers a live video feed of themselves. Unlike a conventional mirror, it retains what passes in front of it: just before a viewer leaves the frame, the system captures a snapshot, which is added to an accumulating archive and periodically overlaid back onto the live feed — a palimpsest of present and past viewers. The system also records a one-second sample of ambient sound on each detection, processed through a granular synthesizer and looped until the next viewer arrives. Mirror and microphone become archive and surveillance apparatus, retaining impressions of everyone who has stood in front of them.
-
-Exhibited at CCRMA, as part of the Intermedia Workshop Research Group's Final Project Showcase.
-
-## Extended text
-
 memories on the wall reimagines the traditional mirror by transforming it from a passive reflective surface into an interactive digital archive. By gazing back, this piece influences/directs the viewer’s interactions around it, staging a ‘theater’ of memories enacted by the viewers/actors.
 
 The installation consists of a monitor that functions as a mirror, displaying a live video stream of viewers standing before it. However, unlike a conventional mirror, this piece captures and preserves traces of its observers. Just before someone exits the frame, the system automatically takes their snapshot, which becomes part of an evolving visual archive. These archived images periodically overlay the live video stream, creating a temporal palimpsest of past and present viewers.
