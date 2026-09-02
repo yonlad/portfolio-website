@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobilized — Yonatan Eshban-Laderman</title>
+  <meta name="description" content="A motorized mobile turns from the ceiling on a skeletal steel-wire armature.">
+  <link rel="canonical" href="https://www.yonatan-eshban-laderman.org/works/mobilized.html">
+
+  <meta property="og:title" content="Mobilized — Yonatan Eshban-Laderman">
+  <meta property="og:description" content="A motorized mobile turns from the ceiling on a skeletal steel-wire armature.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.yonatan-eshban-laderman.org/works/mobilized.html">
+  <meta property="og:image" content="https://www.yonatan-eshban-laderman.org/assets/works/mobilized/mobilized-01.jpg">
+
+  <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+  <link rel="stylesheet" href="../styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "VisualArtwork",
+    "name": "Mobilized",
+    "dateCreated": "2026",
+    "artMedium": "3D-printed PLA, aluminum spray paint, steel, stepper motor, and custom electronics",
+    "creator": {
+      "@type": "Person",
+      "name": "Yonatan Eshban-Laderman"
+    }
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header site-header--sub">
+    <div class="wrap">
+      <a class="back-link" href="../index.html">Yonatan Eshban-Laderman</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="../index.html">works</a>
+        <a href="../writing.html">writing</a>
+        <a href="../about.html">about</a>
+        <a href="../cv.html">cv</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="tombstone">
+      <h1 class="tombstone-title">Mobilized</h1>
+      <p class="tombstone-meta">2026 · 3D-printed PLA, aluminum spray paint, steel, stepper motor, and custom electronics</p>
+      <p class="tombstone-meta">11½ × 30½ × 30½ in.</p>
+    </div>
+
+    <div class="work-hero">
+      <div class="video-wrapper">
+        <video autoplay muted loop playsinline preload="auto" poster="../assets/works/mobilized/mobilized-poster.jpg">
+          <source src="../assets/works/mobilized/mobilized-doc.mp4" type="video/mp4">
+        </video>
+        <button class="sound-toggle" aria-pressed="false">sound</button>
+      </div>
+    </div>
+    </div>
+
+
+
+    <div class="work-body">
+      <p>A motorized child's mobile, hung from the ceiling, turning slowly overhead. It carries 3D-printed hybrids of Israeli military aircraft and the animals they are colloquially named after: the F-16 hawk, the helicopter dolphin, the Hercules rhinoceros. The viewer looks up at it.</p>
+    </div>
+
+
+    <div class="work-images">
+      <img width="2000" height="1333" src="../assets/works/mobilized/mobilized-01.jpg" alt="Mobilized, 2026 — installation view, plane-animal hybrids suspended from a rotating steel-wire mobile">
+      <img width="2000" height="1333" src="../assets/works/mobilized/mobilized-03.jpg" alt="Mobilized, 2026 — detail view of a helicopter/dolphin hybrid form" loading="lazy">
+      <img width="2000" height="1333" src="../assets/works/mobilized/mobilized-02.jpg" alt="Mobilized, 2026 — detail view of an F-16/hawk hybrid form" loading="lazy">
+      <img width="2000" height="1333" src="../assets/works/mobilized/mobilized-04.jpg" alt="Mobilized, 2026 — detail view of a Hercules transport/rhinoceros hybrid form" loading="lazy">
+      <img width="2000" height="1333" src="../assets/works/mobilized/mobilized-05.jpg" alt="Mobilized, 2026 — detail view, aluminum-sprayed surface" loading="lazy">
+      <img width="2000" height="1333" src="../assets/works/mobilized/mobilized-07.jpg" alt="Mobilized, 2026 — installation view from below" loading="lazy">
+      <img width="2000" height="1264" src="../assets/works/mobilized/mobilized-09.jpg" alt="Mobilized, 2026 — detail view" loading="lazy">
+    </div>
+
+    <nav class="work-nav" aria-label="Other works">
+      <div class="next">
+        <a href="confinement.html">
+          <span class="nav-label">Next</span>
+          <span class="nav-title">Confinement</span>
+        </a>
+      </div>
+    </nav>
+  </main>
+
+  <!-- GoatCounter analytics. Account yonlad.goatcounter.com must be registered before launch. -->
+  <script data-goatcounter="https://yonlad.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+    <script>
+      (function () {
+        var v = document.querySelector('.work-hero video');
+        var b = document.querySelector('.sound-toggle');
+        if (!v) return;
+        if (b) b.addEventListener('click', function () {
+          v.muted = !v.muted;
+          if (!v.muted && v.paused) v.play();
+          b.textContent = v.muted ? 'sound' : 'mute';
+          b.setAttribute('aria-pressed', String(!v.muted));
+        });
+        v.addEventListener('click', function () { v.paused ? v.play() : v.pause(); });
+      })();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>When We Are Two — Yonatan Eshban-Laderman</title>
+  <meta name="description" content="Two people sit across a dimly lit dinner table and hold eye contact.">
+  <link rel="canonical" href="https://www.yonatan-eshban-laderman.org/works/when-we-are-two.html">
+
+  <meta property="og:title" content="When We Are Two — Yonatan Eshban-Laderman">
+  <meta property="og:description" content="Two people sit across a dimly lit dinner table and hold eye contact.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.yonatan-eshban-laderman.org/works/when-we-are-two.html">
+  <meta property="og:image" content="https://www.yonatan-eshban-laderman.org/assets/works/when-we-are-two/when-we-are-two-01.jpg">
+
+  <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+  <link rel="stylesheet" href="../styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "VisualArtwork",
+    "name": "When We Are Two",
+    "dateCreated": "2023",
+    "artMedium": "Live audiovisual performance; 2-channel video, 4-channel audio; Max/MSP patch, webcams, dinner table, two lights",
+    "creator": {
+      "@type": "Person",
+      "name": "Yonatan Eshban-Laderman"
+    }
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header site-header--sub">
+    <div class="wrap">
+      <a class="back-link" href="../index.html">Yonatan Eshban-Laderman</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="../index.html">works</a>
+        <a href="../writing.html">writing</a>
+        <a href="../about.html">about</a>
+        <a href="../cv.html">cv</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="tombstone">
+      <h1 class="tombstone-title">When We Are Two</h1>
+      <p class="tombstone-meta">2023 – ongoing · Live audiovisual performance; 2-channel video, 4-channel audio; Max/MSP patch, webcams, dinner table, two lights</p>
+      <p class="tombstone-meta">variable duration</p>
+    </div>
+
+    <div class="work-hero">
+      <div class="video-wrapper">
+        <video autoplay muted loop playsinline preload="auto" poster="../assets/works/when-we-are-two/when-we-are-two-poster.jpg">
+          <source src="../assets/works/when-we-are-two/when-we-are-two-doc.mp4" type="video/mp4">
+        </video>
+        <button class="sound-toggle" aria-pressed="false">sound</button>
+      </div>
+    </div>
+
+
+
+    <div class="work-body">
+      <p>In when we are two, an audience member is invited to join me on stage and meet me with their eyes across a dimly lit dinner table. In this intimate yet alienating setting, made possible only through and by technology, we explore the profound yet often uncomfortable act of sustained eye contact between strangers, transforming the gaze into a vehicle of discovery.</p>
+      <p>when we are two stages an abstract meeting through digital transmutation. Entering an environment directed by a custom-made software, the performers experience each other in a new way: visualize the traces of their gaze, converse without words, connect and find intimacy through technological alienation.</p>
+      <p>Using pupil-tracking technology, webcams capture the saccades of the performers' eyes as they look at each other. Custom software transforms these subtle movements into dual real-time visualizations: behind each participant, a live-stream projection displays an evolving line drawing – a portrait drawn by each viewer's gaze.</p>
+      <p>Simultaneously, the eye movements of each participant feed into an orchestra of synthesizers, creating a 4-channel soundscape where each performer's visual input sculpts half of the audio composition. The result is a technological dialogue where two pairs of speakers voice the unspoken conversation between the performers' eyes.</p>
+    </div>
+
+
+
+    <nav class="work-nav" aria-label="Other works">
+      <div class="prev">
+        <a href="if-gaza-were-here.html">
+          <span class="nav-label">Previous</span>
+          <span class="nav-title">If Gaza Were Here</span>
+        </a>
+      </div>
+      <div class="next">
+        <a href="sounds-of-life.html">
+          <span class="nav-label">Next</span>
+          <span class="nav-title">Sounds of Life</span>
+        </a>
+      </div>
+    </nav>
+  </main>
+
+  <!-- GoatCounter analytics. Account yonlad.goatcounter.com must be registered before launch. -->
+  <script data-goatcounter="https://yonlad.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+    <script>
+      (function () {
+        var v = document.querySelector('.work-hero video');
+        var b = document.querySelector('.sound-toggle');
+        if (!v) return;
+        if (b) b.addEventListener('click', function () {
+          v.muted = !v.muted;
+          if (!v.muted && v.paused) v.play();
+          b.textContent = v.muted ? 'sound' : 'mute';
+          b.setAttribute('aria-pressed', String(!v.muted));
+        });
+        v.addEventListener('click', function () { v.paused ? v.play() : v.pause(); });
+      })();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What We Don't Hear — Yonatan Eshban-Laderman</title>
+  <meta name="description" content="A performer's body is controlled by its own organs, each one made audible for the first time through an unplugged microphone.">
+  <link rel="canonical" href="https://www.yonatan-eshban-laderman.org/works/what-we-dont-hear.html">
+
+  <meta property="og:title" content="What We Don't Hear — Yonatan Eshban-Laderman">
+  <meta property="og:description" content="A performer's body is controlled by its own organs, each one made audible for the first time through an unplugged microphone.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.yonatan-eshban-laderman.org/works/what-we-dont-hear.html">
+  <meta property="og:image" content="https://www.yonatan-eshban-laderman.org/assets/works/what-we-dont-hear/what-we-dont-hear-01.jpg">
+
+  <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+  <link rel="stylesheet" href="../styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "VisualArtwork",
+    "name": "What We Don't Hear",
+    "dateCreated": "2023",
+    "artMedium": "Live audiovisual performance; 1-channel video, 2-channel audio; Max/MSP patch, AI-generated video, Softwave Genki Ring, a body",
+    "creator": {
+      "@type": "Person",
+      "name": "Yonatan Eshban-Laderman"
+    }
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header site-header--sub">
+    <div class="wrap">
+      <a class="back-link" href="../index.html">Yonatan Eshban-Laderman</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="../index.html">works</a>
+        <a href="../writing.html">writing</a>
+        <a href="../about.html">about</a>
+        <a href="../cv.html">cv</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="tombstone">
+      <h1 class="tombstone-title">What We Don't Hear</h1>
+      <p class="tombstone-meta">2023 · Live audiovisual performance; 1-channel video, 2-channel audio; Max/MSP patch, AI-generated video, Softwave Genki Ring, a body</p>
+      <p class="tombstone-meta">ca. 10 min</p>
+    </div>
+
+    <div class="work-hero">
+      <div class="video-wrapper">
+        <video autoplay muted loop playsinline preload="auto" poster="../assets/works/what-we-dont-hear/what-we-dont-hear-poster.jpg">
+          <source src="../assets/works/what-we-dont-hear/what-we-dont-hear-doc.mp4" type="video/mp4">
+        </video>
+        <button class="sound-toggle" aria-pressed="false">sound</button>
+      </div>
+    </div>
+
+
+
+    <div class="work-body">
+      <p>what we don’t hear is a theatrical performance that attempts to voice what is suppressed, repressed, or hidden within our organs. Unlike traditional theater, the main actor in this piece is the soundtrack, which controls the performer and dictates his movements as if he were a marionette.</p>
+      <p>The performance begins with an advertisement that sets the atmosphere by highlighting the importance and interconnectedness of the five essential organs in our body. This introduction invites the audience to re-examine what lies beneath our skin, both literally and metaphorically.</p>
+      <p>Through a circus-like show, the audience is introduced to a new invention: an unplugged microphone that enables us to hear our organs for the first time. Each organ communicates its unique sounds, revealing its functioning or malfunctioning, its traumas, and its struggles. The soundtrack is precomposed, and each sound cue is triggered by the performer clicking a Genki Ring hidden under his glove.</p>
+      <p>As the performance progresses, the performer's initial surprise at the sounds of his organs transitions into an expectation of discovering the next sound his body will produce. The lines between control and being controlled blur, raising the question of whether the performer controls the sounds of his organs or if the reverse is true.</p>
+      <p>The climax of the piece occurs when the performer listens to his own brain, recursively listening to himself in the process of creating himself. This experience becomes overwhelming as he realizes he is simultaneously both the subject and the object of his own perception.</p>
+      <p>Staged at CCRMA's Stage, Stanford, as part of the Electronic Sound Poetry Festival.</p>
+    </div>
+
+
+
+    <nav class="work-nav" aria-label="Other works">
+      <div class="prev">
+        <a href="translations.html">
+          <span class="nav-label">Previous</span>
+          <span class="nav-title">Translations</span>
+        </a>
+      </div>
+    </nav>
+  </main>
+
+  <!-- GoatCounter analytics. Account yonlad.goatcounter.com must be registered before launch. -->
+  <script data-goatcounter="https://yonlad.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+    <script>
+      (function () {
+        var v = document.querySelector('.work-hero video');
+        var b = document.querySelector('.sound-toggle');
+        if (!v) return;
+        if (b) b.addEventListener('click', function () {
+          v.muted = !v.muted;
+          if (!v.muted && v.paused) v.play();
+          b.textContent = v.muted ? 'sound' : 'mute';
+          b.setAttribute('aria-pressed', String(!v.muted));
+        });
+        v.addEventListener('click', function () { v.paused ? v.play() : v.pause(); });
+      })();
+    </script>
+  </body>
+</html>
