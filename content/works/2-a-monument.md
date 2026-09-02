@@ -12,3 +12,7 @@ images: assets/works/2-a-monument/
 Two beds, left behind when their occupants moved out of a shared college apartment, are deconstructed and rebuilt into sculptures — one for each former tenant, standing in for the body that used to sleep there. The floor is covered in white paper, converting the room from ordinary domestic space into something closer to a temple, a cloud, or a memory. The room becomes a monument to people no longer present, built from the furniture that once held them, in the shape of the bodies it no longer holds.
 
 Exhibited at Room 234B Gallery, Stanford University.
+
+## Extended text
+
+After my two roommates in College left our apartment, I was compelled to make their room into a monument of their presence there. I deconstructed their beds and made sculptures out of them, each representing one of the past-tenants of the room. I covered the floor with white paper to demarcate that the room has ceased to be just a room and is now a temple, or a cloud, or a memory. It is a different space from what it used to be with different inhabitants– beds in the shape of people.

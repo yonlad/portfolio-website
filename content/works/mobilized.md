@@ -10,8 +10,4 @@ kinetic: "Motorized; continuous rotation"
 video: assets/works/mobilized/mobilized-doc.mp4
 images: assets/works/mobilized/
 ---
-A motorized mobile turns from the ceiling on a skeletal steel-wire armature. Hanging from it: plane-animal hybrids, each a complete fusion with no visible seam between airframe and animal — an F-16 merged with a hawk, a helicopter merged with a dolphin, a Hercules transport merged with a rhinoceros, following the colloquial nicknames given to Israeli military aircraft. Each form is 3D-printed in PLA, then sprayed a uniform aluminum that erases the printed layer lines and any trace of the hand, giving the hybrids an industrial, manufactured cold.
-
-The wire references Calder's balance but is chandelier-thin, without his play. The motor turns the piece continuously and in silence — no music, no narration.
-
-Installation is fixed: ceiling-mounted, suspended above the viewer, who is required to look up. The overhead position is not staging — it is the piece, repeating the one posture every infant takes beneath its first mobile.
+A motorized child's mobile, hung from the ceiling, turning slowly overhead. It carries 3D-printed hybrids of Israeli military aircraft and the animals they are colloquially named after: the F-16 hawk, the helicopter dolphin, the Hercules rhinoceros.

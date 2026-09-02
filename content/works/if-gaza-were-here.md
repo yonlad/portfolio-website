@@ -10,8 +10,8 @@ external_link_label: "Catalog record, National Library of Israel"
 video: assets/works/if-gaza-were-here/if-gaza-were-here-doc.mp4
 images: assets/works/if-gaza-were-here/
 ---
-A custom image-generation model was trained on 121 paired before-and-after satellite photographs of Gaza, taken from directly overhead. The book opens with those 121 pairs, unlabeled — no place names, no coordinates, only the fact of the pairing. What follows is the model's complete weight file, printed across the remaining pages as sequential floating-point numbers: the same information the images carry, compressed past legibility, readable only by the machine that produced it.
+A custom image-generation model was trained on 121 paired before-and-after satellite photographs of sites destroyed in Gaza by Israel. The book opens with those 121 pairs, followed by the model's complete weight file, printed across the remaining pages as sequential floating-point numbers: the same information the images carry, compressed past legibility, readable only by the machine that produced it.
 
-The book carries no copyright. The artist claims no ownership over the weights it prints.
+The book carries no copyright. All proceeds from the book are donated to Gazan-led mutual aid funds.
 
-The book was deposited with the National Library of Israel under the country's legal deposit statute, which requires publishers to submit copies of material printed within its borders. The deposit was accepted through the standard intake process. The book is now part of the Library's collection and appears in its public catalog, searchable alongside every other title held under the same requirement.
+The book was deposited with the National Library of Israel under the country's legal-deposit statute, which required the Library to accept it into the national collection, where it is now catalogued.

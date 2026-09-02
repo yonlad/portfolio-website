@@ -500,3 +500,22 @@ nav.nav a[aria-current="page"] {
   text-decoration-color: var(--border);
 }
 .writing li a:hover { text-decoration-color: var(--text); }
+
+/* extended text disclosure */
+.extended-text {
+  max-width: var(--text-width);
+  margin: -1.5rem 0 3rem;
+}
+.extended-text summary {
+  cursor: pointer;
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  text-transform: lowercase;
+  color: var(--text-secondary);
+  list-style: none;
+}
+.extended-text summary::before { content: "+ "; }
+.extended-text[open] summary::before { content: "\2212\00a0"; }
+.extended-text summary::-webkit-details-marker { display: none; }
+.extended-text summary:hover { color: var(--text); }
+.extended-text p { margin: 1.2rem 0 0; }

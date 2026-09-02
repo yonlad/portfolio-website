@@ -16,63 +16,61 @@
 ## 1. ABOUT PAGE
 
 **Bio:**
-> Yonatan Eshban-Laderman (b. Tel Aviv, Israel) lives and works in Brooklyn, NY. He holds a BS in Symbolic Systems, with Distinction, Honors in the Arts, and a Minor in Creative Writing, and an MA in German Studies (Theater & Performance Studies, Media Studies), both from Stanford University. His practice moves across sculpture, installation, new media, and performance, built from research into militarization, surveillance technology, and the material infrastructures that connect civilian and military life. His work has been shown at CCRMA and Stanford's Elam Theater, SOMArts Cultural Center (San Francisco), NYCResistor (Brooklyn), and Pop Gun Art Gallery (New York). His critical writing has appeared in Ha'aretz, the Brooklyn Rail, and IMPULSE Magazine.
-
-**Statement:**
-> My work takes objects, images, and technologies from one context — often a context of violence, surveillance, or state power — and forces them into another, exposing the ideological assumptions in both and producing a third, unforeseen meaning at the site of collision. I trace the material connections between domains that appear unrelated but share infrastructure, political economy, or bodily experience.
->
-> I grew up in Tel Aviv in a society where militarization begins at birth: warplanes carry the nicknames of animals, children's toys exist in the shadow of the weapons they prefigure, the bureaucratic forms for mourning the dead are printed before the dead have names. I avoided mandatory military conscription at nineteen. My work is shaped by that origin: the knowledge that the architecture of death is institutional, not metaphorical, and the complicity of having been formed inside it before refusing it.
->
-> I ask what each piece must communicate if its technology fails completely — what its silhouette and presence alone must transmit. I am interested in the imperfect and the indeterminate: the zone where an object is becoming something else and neither category holds. My work does not resolve its contradictions. It holds them open.
+> Yonatan Eshban-Laderman lives and works in Brooklyn, NY. He holds both a BS and an MA from Stanford University. His practice moves across sculpture, installation, new media, and performance, built from research into militarization, surveillance technology, and the material infrastructures that connect civilian and military life. His work has been shown at CCRMA and Stanford's Elam Theater, SOMArts Cultural Center (San Francisco), NYCResistor (Brooklyn), and Pop Gun Art Gallery (New York). His critical writing has appeared in the Brooklyn Rail, and IMPULSE Magazine, Ha'aretz, Local Call, and Artefuse.
 
 ---
 
 ## 2. SELECTED WORKS
 
 ### Mobilized, 2026
-*3D-printed PLA, aluminum spray paint, steel, stepper motor, and custom electronics · 11½ × 30½ × 30½ in., dimensions variable (suspended, rotating) · Unique · Motorized; continuous rotation*
-> A motorized mobile turns from the ceiling on a skeletal steel-wire armature. Hanging from it: plane-animal hybrids, each a complete fusion with no visible seam between airframe and animal — an F-16 merged with a hawk, a helicopter merged with a dolphin, a Hercules transport merged with a rhinoceros, following the colloquial nicknames given to Israeli military aircraft. Each form is 3D-printed in PLA, then sprayed a uniform aluminum that erases the printed layer lines and any trace of the hand, giving the hybrids an industrial, manufactured cold.
->
-> The wire references Calder's balance but is chandelier-thin, without his play. The motor turns the piece continuously and in silence — no music, no narration.
->
-> Installation is fixed: ceiling-mounted, suspended above the viewer, who is required to look up. The overhead position is not staging — it is the piece, repeating the one posture every infant takes beneath its first mobile.
+*3D-printed PLA, aluminum spray paint, steel, stepper motor, and custom electronics · 11½ × 30½ × 30½ in*
+> A motorized child's mobile, ceiling-hung, that turns slowly overhead. It carries 3D-printed hybrids of Israeli military aircrafts and the animals they are colloquially named after: the F-16 hawk, the helicopter dolphin, the Hercules rhinoceros.
 
 ### Confinement, 2026
 *Welded steel, blank shiva mourning notices printed on paper · 48 × 18 × 7 in. · Unique*
-> A welded steel frame merges the outline of a baby's cradle with a military field stretcher. The two forms share the same proportions closely enough that the object reads as either, and as both, without explanation.
->
-> Blank shiva notices — the black-and-white death announcements printed and posted in the streets in Israel, following the standard typography of that tradition — wrap the frame in newsprint-weight paper. The wrapping is partial: steel shows through in bands where the paper does not reach, clinging to the frame rather than covering it. Every notice carries the mourning text in full except the line where a name would go. That line is left blank on every sheet.
->
-> The object sits on the floor. The viewer looks down at it — the posture of a parent bent over a crib, or of a medic bent over a body carried on a stretcher. Both postures are available at once; the piece does not resolve which one the viewer is in.
+> A welded steel frame that gestures at once a baby's cradle and a military field stretcher. Its bars are partly wrapped in blank Israeli shiva mourning notices, the printed death announcements that go up on the street after someone dies, here with the name-fields left empty. The piece sits on the floor.
 
 ### If Gaza Were Here: Notes Towards a Non-visual Grammar of Gaza's Genocide, 2026
 *Artist book — 121 paired satellite training images and the complete printed weights of a custom image-generation model; deposited by legal deposit in the National Library of Israel · 398 pp., 8¼ × 7¼ in. · [link: Catalog record, National Library of Israel]*
-> A custom image-generation model was trained on 121 paired before-and-after satellite photographs of Gaza, taken from directly overhead. The book opens with those 121 pairs, unlabeled — no place names, no coordinates, only the fact of the pairing. What follows is the model's complete weight file, printed across the remaining pages as sequential floating-point numbers: the same information the images carry, compressed past legibility, readable only by the machine that produced it.
+> A custom image-generation model was trained on 121 paired before-and-after satellite photographs of sites destroyed in Gaza by Israel. The book opens with those 121 pairs, followed by the model's complete weight file, printed across the remaining pages as sequential floating-point numbers: the same information the images carry, compressed past legibility, readable only by the machine that produced it.
 >
-> The book carries no copyright. The artist claims no ownership over the weights it prints.
+> The book carries no copyright. And all proceeds generated from this book will be donated to Gazan-led mutual aid funds.
 >
-> The book was deposited with the National Library of Israel under the country's legal deposit statute, which requires publishers to submit copies of material printed within its borders. The deposit was accepted through the standard intake process. The book is now part of the Library's collection and appears in its public catalog, searchable alongside every other title held under the same requirement.
+> The book was deposited with the National Library of Israel under the country's legal deposit statute, requiring the Library to accept the book into its collection where it now appears and archived.
 
 ### When We Are Two, 2023 – ongoing
-*Live audiovisual performance; 2-channel video, 4-channel audio; Max/MSP patch, webcams, dinner table, two lights · ca. 4 min*
+*Live audiovisual performance; 2-channel video, 4-channel audio; Max/MSP patch, webcams, dinner table, two lights · variable duration*
 ⚑ "ca. 4 min" — is 4 minutes right for a durational eye-contact piece, or is it open-ended per encounter?
-> Two people sit across a dimly lit dinner table and hold eye contact. Webcams track the saccades of both gazes; a custom Max/MSP patch converts the movement into two live line drawings, projected on screens behind each participant, and into a four-channel soundscape, with each participant's eye movement scoring half the audio. The drawing accumulates for as long as the two continue to hold each other's eyes; the sound tracks the same duration.
->
-> Staged at CCRMA Stage and at Stanford's Elam Theater as part of the Arts Intensive Showcase. Ongoing since 2023, developed toward a longer touring form.
-⚑ "developed toward a longer touring form" — not in your records; confirm or cut.
+> In when we are two, an audience member is invited to join me on stage and meet me with their eyes across a dimly lit dinner table. In this intimate yet alienating setting, made possible only through and by technology, we explore the profound yet often uncomfortable act of sustained eye contact between strangers, transforming the gaze into a vehicle of discovery.
+>when we are two stages an abstract meeting through digital transmutation. Entering an environment directed by a custom-made software, the performers experience each other in a new way: visualize the traces of their gaze, converse without words, connect and find intimacy through technological alienation.
+
+>Using pupil-tracking technology, webcams capture the saccades of the performers' eyes as they look at each other. Custom software transforms these subtle movements into dual real-time visualizations: behind each participant, a live-stream projection displays an evolving line drawing – a portrait drawn by each viewer's gaze.
+
+>Simultaneously, the eye movements of each participant feed into an orchestra of synthesizers, creating a 4-channel soundscape where each performer's visual input sculpts half of the audio composition. The result is a technological dialogue where two pairs of speakers voice the unspoken conversation between the performers' eyes.
 
 ### Sounds of Life, 2024
 *Interactive web archive / surveillance app; HTML, CSS, JavaScript, React.js / Swift · [link: Live site (desktop only)]*
-> A self-surveillance app records eighteen ten-second clips a day — 18×10, after the Hebrew "chai," life — logging ordinary sound in Israel through September 2024. The recordings populate an online calendar: clicking a date plays that day's clips; clicking the corresponding day of the war opens a report of Israeli attacks and Palestinian casualties, which interrupts and obscures the audio already playing. The cursor is mostly invisible; navigation requires deliberate searching.
->
-> A specific click sequence unlocks an "ENOUGH" button, opening a hidden calendar where visitors have 18×10 seconds to overwrite the archive with their own recordings before the countdown reverts them. Built in HTML, CSS, JavaScript, and React, with a companion app in Swift.
+> sounds of life is an interactive web-archive calendar that juxtaposes the disturbing contrast between the comfortable normalcy of Jewish life in Israel and the ongoing genocide of Palestinians in Gaza during September 2024.
+> Required to return to Israel for familial obligations after a two-year absence, I turned my visit into an opportunity to document Israeli society's unsettling ability to maintain a façade of ordinary existence while actively perpetrating atrocities.
+
+>Inspired by the story of Medo Halimi, a Gazan TikToker killed by an Israeli airstrike on his way to charge his phone just days before my arrival, I realized that the war was present even in my phone's ability to move around freely, charged, and 'hear' different soundscapes. In response, I developed sounds of life, a surveillance app installed on my phone, programmed to capture 18x10 second recordings four times a day, alluding to the Hebrew word 'chai' (חיx10) meaning life. This extended self-surveillance performance served as a reminder of my privileged life and proof of my survival in Israel while Gaza was bombarded, capturing sounds of undisturbed, everyday life in Israel amidst war.
+
+>Using the sounds recorded during my stay to expose the asymmetrical relationship between safety in Israel and constant threat in Gaza, I designed the calendar of remembrance website presenting two juxtaposing temporalities: the days of the month and the days since the Israeli-Hamas war began. Intentionally challenging to navigate, with a mostly invisible cursor, this calendar demands the user's effort to bear witness to its content. Clicking on a day of the month triggers a popup hosting the recordings captured on that day, while clicking on a day of the war opens a report detailing the atrocities committed by Israel in Gaza and the resulting casualties. The website's interface mirrors the lopsided power dynamics at play, as the Gaza reports randomly obscure and disrupt the user’s access to the recordings from Israel, which nonetheless continue unabated once started—a haunting embodiment of Israel's ability to drown out and ignore Palestinian suffering.
+
+>After clicking once on the header text, twice on yellow numbers, and once on a timestamp in a popup triggered by a click on white/red dates, users are presented with an 'ENOUGH' button, endowing them with the ability to shatter the oppressive grid and momentarily access the calendar of hope, an alternate space where users have 18x10 fleeting seconds to replace the sounds and reports featured in the calendar of remembrance by inserting their own audio files and words, collectively imagining a future where Palestine is free and Israelis and Palestinians coexist as equals. Once the countdown reaches 0, the inputs are saved, and users are redirected to the calendar of remembrance. Constantly needing to return to the calendar of hope to realize the vision of a peaceful future suggests that such work demands sustained, collaborative effort, always keeping the painful past and present in sight while working towards a better tomorrow.
+
+>A meditation on the interdependence of past, present, and future as well as the interplay of memory, resistance, and hope, sounds of life grapples with the normalization of genocide, calls for bearing witness to injustice, and provides a forum for forging a path towards peace, equality, and reconciliation.
 
 ### Scenes From American Culture, 2023
 *One-act performance; 5 actors, a gallery · ca. 40 min*
 ⚑ TITLE: site + CV say "Scenes From American **Culture**"; my-art.md Appendix says "Scenes From American **Life**." Which is canonical?
 ⚑ "Commissioned by … Pop Gun Art Gallery" — "commissioned" isn't in your records (we removed the same word from the About bio). Confirm or soften to "performed at."
-> A jaded gallerist encounters a sequence of American subculture figures inside his gallery. Five actors move through interwoven vignettes built around him, staged to break the frontal arrangement of stage and audience. Actors enter from the street outside and spray-paint the glass windows the audience sits behind. A planted audience member receives phone calls throughout the show, interrupting performers and viewers alike. The performance ends with two actors dressed as police officers ordering the audience out of the gallery and closing the piece by removing them from the room.
->
+> Scenes From American Culture is an anti-art theatrical performance that employs five actors to critique the institution of art galleries, consumerism, and Late Capitalism. The play consists of interwoven absurd vignettes revolving around a jaded art gallerist who encounters characters from various American subcultures at his gallery.
+
+
+>As an anti-theatrical experiment, Scenes From American Culture challenges traditional theatrical conventions by bifurcating spatial unity and deconstructing the idea of the frontal spectacle or stage. The performance achieves this by featuring simultaneous performance moments that surround and envelop the audience.
+
+>In one such moment, actors emerged from the street outside the gallery and began spray-painting the transparent glass windows behind which the audience sat and saw the frontal performance. Another moment involved a planted actor sitting in the audience who continuously received phone calls during the show, disrupting the experience of the audience and other performers alike. Lastly, the show ended with two actors dressed as police officers assertively requesting the audience to leave due to a noise complaint, and eventually kicked out the audience.
 > Written and directed by the artist. Commissioned by and performed at Pop Gun Art Gallery, New York, August 2023.
 
 ---
@@ -81,33 +79,55 @@
 
 ### Autopilot, 2025
 *Experimental game / interactive installation; SuperCollider, Python, HTML, CSS, JavaScript, WebGazer.js · ca. 10 min*
-> The player takes the role of a drone operator. Eye-tracking software, retrained from WebGazer.js, places a targeting crosshair on a "mission-video" — 4K footage of Israel, digitally degraded into low resolution and glitch — at the point the player's gaze lands; a mouse click fires. Two saw-wave synthesizers in SuperCollider tie pitch and amplitude to eye movement, producing a continuous motor-like drone under a missile-launch sound on each click. Strikes are never shown directly: each produces a sustained light flicker that outlasts its explosion sound and bleeds into the following footage.
->
-> After roughly ten minutes the game ends onto an information page: high-resolution photographs from Gaza, drone-market data, and casualty figures from U.S. drone strikes in the Middle East.
+> Autopilot is a game critiquing how warfare drones disconnect the combatant from the scene of violence. Situating the player in the role of a drone operator who controls the drone’s target with her eyes and launches missiles with a mouse-click, Autopilot aims to render visible and proximate the low-resolution landscape that the drone makes ever more distant (physically and morally).
+>Combat drones, heralded as the future of warfare, have become increasingly prevalent on modern battlefields. While celebrated for making military operations safer for the deploying forces, their ethical implications often go unexamined. Beyond highlighting the power disparity between nations and groups that can afford drone technology, drone warfare raises profound questions about surveillance, perspective, and the mediation of conflict. Thus, Autopilot originated from the assumption that the quality of a place's representation influences the actions deemed permissible in that space. Depicting a territory solely through low-resolution imaging technologies is a violent act that degrades its importance, equivalent to saying that what happens there does not matter. In times of war, this can lead to regarding a place as "collateral damage" and justifying its destruction.
+
+>An intervention to Israel’s usage of combat drones in Gaza, Autopilot began by collecting 4K drone footage of Israel, which was then digitally processed to degrade its resolution and introduce glitchiness. These manipulated scenes were combined to create a 'mission-video.' To maintain the narrative tension, the ethical implications of drone warfare are initially masked from the player, with the landing page presenting the experience as a straightforward challenge, a game, with different objectives to accomplish in the mission-video.
+
+>To implicate the player as the drone operator, I customized and retrained WebGazer.js to superimpose a targeting crosshair on the mission-video at the point the player's eyes focus. To further embody the player's control of the drone, I created two saw-wave-based synthesizers in SuperCollider whose amplitudes and frequencies change in response to the player's eye movements, generating an intentionally disturbing motor-like sound. Also, a missile launch audio is triggered with each mouse click. Rather than depicting explicit violence, bombing actions are represented through sustained light flickers. These visual distortions persist well after the explosion sound effects, suggesting that the impact of violence extends far beyond its initial moment.
+
+>The experience concludes by directing players to an information page contextualizing their participation. This section presents high-definition images from Gaza, data on combat drone proliferation, combat drone market dynamics, and documented casualties from U.S. drone operations in the Middle East. By confronting players with these high-resolution images and facts, the project reveals itself as more than just a game – it becomes a mirror reflecting our collective complicity in remote warfare.
 
 ### 2: A Monument, 2023
 *Sculpture installation — deconstructed dormitory beds, white paper · [link: Press, The Stanford Daily]*
-> Two beds, left behind when their occupants moved out of a shared college apartment, are deconstructed and rebuilt into sculptures — one for each former tenant, standing in for the body that used to sleep there. The floor is covered in white paper, converting the room from ordinary domestic space into something closer to a temple, a cloud, or a memory. The room becomes a monument to people no longer present, built from the furniture that once held them, in the shape of the bodies it no longer holds.
+> After my two roommates in College left our apartment, I was compelled to make their room into a monument of their presence there. I deconstructed their beds and made sculptures out of them, each representing one of the past-tenants of the room. I covered the floor with white paper to demarcate that the room has ceased to be just a room and is now a temple, or a cloud, or a memory. It is a different space from what it used to be with different inhabitants– beds in the shape of people.
 >
 > Exhibited at Room 234B Gallery, Stanford University.
 
 ### Memories on the Wall, 2024
 *Interactive installation; TouchDesigner, Max/MSP patch, monitor, speaker, wall*
-> A monitor functions as a mirror, showing viewers a live video feed of themselves. Unlike a conventional mirror, it retains what passes in front of it: just before a viewer leaves the frame, the system captures a snapshot, which is added to an accumulating archive and periodically overlaid back onto the live feed — a palimpsest of present and past viewers. The system also records a one-second sample of ambient sound on each detection, processed through a granular synthesizer and looped until the next viewer arrives. Mirror and microphone become archive and surveillance apparatus, retaining impressions of everyone who has stood in front of them.
+> memories on the wall reimagines the traditional mirror by transforming it from a passive reflective surface into an interactive digital archive. By gazing back, this piece influences/directs the viewer’s interactions around it, staging a ‘theater’ of memories enacted by the viewers/actors.
 >
-> Exhibited at CCRMA, as part of the Intermedia Workshop Research Group's Final Project Showcase.
+> The installation consists of a monitor that functions as a mirror, displaying a live video stream of viewers standing before it. However, unlike a conventional mirror, this piece captures and preserves traces of its observers. Just before someone exits the frame, the system automatically takes their snapshot, which becomes part of an evolving visual archive. These archived images periodically overlay the live video stream, creating a temporal palimpsest of past and present viewers.
+
+>The sonic dimension of the piece parallels this visual accumulation. When the system detects a viewer, it records a one-second sample of ambient sound. This audio snippet is then processed through a granular synthesizer with dynamic parameters and played in a loop until the next viewer triggers a new recording. This granular-like looper creates an ever-evolving soundscape that echoes the visual layering of memories.
+
+>Through this interaction between present moments and preserved memories, memories on the wall challenges our conventional understanding of mirrors and other objects as passive. The piece suggests an alternative paradigm where mirrors actively collect, retain impressions, and surveil those gazing into them, creating a repository of visual and sonic data/memories.
+
+>[The image embedded above was taken during the exhibition of the piece at CCRMA’s Intermedia Workshop Research Group’s Final Project Showcase. Yet due to bad documentation of the piece during that show, I provided a demo video exemplifying the different features of the system. To see the system setup and not only the monitor’s output skip to 01:36.]
 
 ### Translations, 2024
 *Interactive installation; 1-channel video, 1-channel audio; wood, Arduino, 2 ultrasonic sensors, TouchDesigner, speaker*
-> A model of a destroyed city, built from wood, stands as the piece's central object. Two ultrasonic sensors hidden in its pedestal are triggered as viewers move around the sculpture, each activating a different video and sound projection mapped onto it. Every image shown is a transformation of a single photograph of the sculpture: decoded and re-encoded as a .wav file, digitally processed, then re-encoded back into a .jpeg — a chain that produced over twenty image-sound pairs. The zig-zagging path a viewer walks around the object repeats the back-and-forth motion of translation itself, carrying meaning from one language, one medium, into another.
->
+> Translations is the practice-based component of my bachelor’s artistic honors thesis. Translations explores how everything around us is data that is read in a particular way; and, consequently, Translations attempts to open up different ways of reading the data around us, through translating physical objects to images, images to sound, and sound back to images.
+> A destroyed city, built from wood, serves as the central spectacle of this piece. Visitors are invited to look at this sculpture and take in its iconography and architectural features. As they walk around the sculpture, they might trigger an ultrasonic sensor hidden at the sculpture's pedestal. One sensor triggers the projection and sound. The other sensor triggers a different projection-mapping of the image. All images shown are different versions of a single picture of the sculpture. To create the different images, I decoded the original picture and encoded it as a .wav file, which I then digitally processed. Each audio processing procedure resulted in a different sound file, so when I re-encoded that file as a .jpeg file, a new image was produced. Thus, I created over 20 image-sound pairs, one of which is randomly triggered when a viewer is detected by the ultrasonic sensor.
+
+> The motivation behind the complicated spatial design of the environment of the piece is an attempt to capture and inscribe the choreography at the heart of the translation process. In my research, I found that the fundamental gesture of the translation act is a non-linear, back-and-forth, zig-zag. When a visitor walks around the sculpture and triggers a sensor, the visitor’s viewing experience is interrupted by the triggered projection and sound. Turning their head to observe the previously unknown feature of the installation, the visitor ceases to move linearly in the gallery: they turn back. Comparing the projection with the sculpture in front of the visitor, the visitor zig-zags again. Continuing to participate in this non-linear set design of the installation, the visitor embodies the figure of the translator who moves words and meanings from one language to another, back-and-forth. Thus, a play about the concept of translations unfolds.
 > Exhibited at Stanford, as part of Stanford's Honors in the Arts Final Exhibition.
 
 ### What We Don't Hear, 2023
 *Live audiovisual performance; 1-channel video, 2-channel audio; Max/MSP patch, AI-generated video, Softwave Genki Ring, a body · ca. 10 min*
 ⚑ Closing line says "Electronic Sound **Art** Festival"; your CV says "Electronic Sound **Poetry** Festival." Which is right?
-> A performer's body is controlled by its own organs. An advertisement opens the piece, framing the five essential organs and their interconnection, before a circus-like sequence introduces an "invention" — an unplugged microphone that lets the audience hear each organ speak: its functions, malfunctions, traumas. The soundtrack is precomposed and triggered by the performer through a ring hidden under his glove, so sound appears to originate from inside his body while actually dictating his movement, marionette-like. The piece climaxes when the performer listens to his own brain — recursively producing himself as both subject and object of his own perception.
->
+> what we don’t hear is a theatrical performance that attempts to voice what is suppressed, repressed, or hidden within our organs. Unlike traditional theater, the main actor in this piece is the soundtrack, which controls the performer and dictates his movements as if he were a marionette.
+
+
+>The performance begins with an advertisement that sets the atmosphere by highlighting the importance and interconnectedness of the five essential organs in our body. This introduction invites the audience to re-examine what lies beneath our skin, both literally and metaphorically.
+
+>Through a circus-like show, the audience is introduced to a new invention: an unplugged microphone that enables us to hear our organs for the first time. Each organ communicates its unique sounds, revealing its functioning or malfunctioning, its traumas, and its struggles. The soundtrack is precomposed, and each sound cue is triggered by the performer clicking a Genki Ring hidden under his glove.
+
+>As the performance progresses, the performer's initial surprise at the sounds of his organs transitions into an expectation of discovering the next sound his body will produce. The lines between control and being controlled blur, raising the question of whether the performer controls the sounds of his organs or if the reverse is true.
+
+>The climax of the piece occurs when the performer listens to his own brain, recursively listening to himself in the process of creating himself. This experience becomes overwhelming as he realizes he is simultaneously both the subject and the object of his own perception.
+
 > Staged at CCRMA's Stage, Stanford, as part of the Electronic Sound Art Festival.
 
 ---

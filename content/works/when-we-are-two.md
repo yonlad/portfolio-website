@@ -11,3 +11,13 @@ images: assets/works/when-we-are-two/
 Two people sit across a dimly lit dinner table and hold eye contact. Webcams track the saccades of both gazes; a custom Max/MSP patch converts the movement into two live line drawings, projected on screens behind each participant, and into a four-channel soundscape, with each participant's eye movement scoring half the audio. The drawing accumulates for as long as the two continue to hold each other's eyes; the sound tracks the same duration.
 
 Staged at CCRMA Stage and at Stanford's Elam Theater as part of the Arts Intensive Showcase. Ongoing since 2023.
+
+## Extended text
+
+In when we are two, an audience member is invited to join me on stage and meet me with their eyes across a dimly lit dinner table. In this intimate yet alienating setting, made possible only through and by technology, we explore the profound yet often uncomfortable act of sustained eye contact between strangers, transforming the gaze into a vehicle of discovery.
+
+when we are two stages an abstract meeting through digital transmutation. Entering an environment directed by a custom-made software, the performers experience each other in a new way: visualize the traces of their gaze, converse without words, connect and find intimacy through technological alienation.
+
+Using pupil-tracking technology, webcams capture the saccades of the performers' eyes as they look at each other. Custom software transforms these subtle movements into dual real-time visualizations: behind each participant, a live-stream projection displays an evolving line drawing – a portrait drawn by each viewer's gaze.
+
+Simultaneously, the eye movements of each participant feed into an orchestra of synthesizers, creating a 4-channel soundscape where each performer's visual input sculpts half of the audio composition. The result is a technological dialogue where two pairs of speakers voice the unspoken conversation between the performers' eyes.
