@@ -133,3 +133,14 @@ served by the site itself — same policy as images: masters stay on Google Driv
 Total repo growth ≈ 120MB. Note: translations (2:16), when-we-are-two,
 what-we-dont-hear (10:22), scenes are LONGER cuts, not the 1-min versions —
 artist may supply 1-min masters later for full-1080p upgrades.
+
+---
+
+## 🟢 LAUNCHED 2026-09-01
+
+Merged to main and live at https://www.yonatan-eshban-laderman.org. All launch
+checks passed (pages, cv.pdf, video range support, redirects, family pages,
+analytics). Old site: git tag `old-site-2020-2026` + browsable archive at
+https://yonlad.github.io/portfolio-archive/ (noindex). Staging harness stays at
+https://yonlad.github.io/portfolio-staging/ via ./deploy-staging.sh for all
+future iteration — never edit main directly again; branch → staging → merge.
