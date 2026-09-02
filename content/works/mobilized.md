@@ -10,4 +10,4 @@ kinetic: "Motorized; continuous rotation"
 video: assets/works/mobilized/mobilized-doc.mp4
 images: assets/works/mobilized/
 ---
-A motorized child's mobile, hung from the ceiling, turning slowly overhead. It carries 3D-printed hybrids of Israeli military aircraft and the animals they are colloquially named after: the F-16 hawk, the helicopter dolphin, the Hercules rhinoceros.
+A motorized child's mobile, hung from the ceiling, turning slowly overhead. It carries 3D-printed hybrids of Israeli military aircraft and the animals they are colloquially named after: the F-16 hawk, the helicopter dolphin, the Hercules rhinoceros. The viewer looks up at it.
